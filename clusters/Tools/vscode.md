@@ -2,7 +2,7 @@
 ## Use vscode to run directly on a dahu or  dahu node
 
 Prior to this, you need first to set up the config file and the ssh keys so you can have acces to dahu without any password
-cf [SSH-keys](https://github.com/IGE-numerique/ige-calcul/blob/main/schedulers/oar/dahu.md)
+cf [SSH-keys](../Gricad/dahu.md)
 
 **on dahu**
 
