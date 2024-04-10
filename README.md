@@ -7,12 +7,15 @@ The following documentation will get you through the different steps you need to
  
 ![Ige computing servers](./clusters/Ige/ige-calcul1.md)
 
-# Compution for IGE/External users
+# Computing for IGE/External users
 
 Gricad infrastructure provides a lot of ressources for all the labs of Grenoble University. It includes CPU/GPU ressources
+
 For now the most used cluster is dahu which is used for CPU ressources
 
-@ige, we are a proving a straighforward documention , to start computin rapidly
+Gricad is open for any student/researcher/engineer. If you have a contract with Grenoble University, you have already an internal account defined by Agalan Credentials. If you are outside the campus and even outside France, you will get an external account as long as you have an institutianal email
+
+@Ige, we are a providing a straighforward documentation , to start computing rapidly
 
 ![Gricad computing servers: Dahu](./clusters/Gricad/dahu.md)
 
