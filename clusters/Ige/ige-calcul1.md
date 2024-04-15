@@ -149,12 +149,28 @@ chekkim@ige-calcul1:~$ squeue
 
 
 For interactive mode  you should use the srun/salloc commands 
+
+Either you get the ressources using **srun** followed by **--pty bash -i**
+Then you can run any program you need
+
+Or you use **srun** followed by **your program** and then it will allocate the ressource , run the program and exit
+
+
 An equivalent to the `job.sh` should be
 
 ```
+
+
 Run mpi hello example with 4 cores
 
 srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi
+==> This will run and exist once it is done
+
+or
+srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 --pty bash -i
+srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi
+
+==> keep the ressources even when the program is done
 
 Run Qgis with 8 threads (graphic interface)
 
