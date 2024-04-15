@@ -112,22 +112,8 @@ https://gricad-doc.univ-grenoble-alpes.fr/hpc/softenv/guix/
 
 Or **conda/micromamba** : **micromamba** is faster
 
-```
-# Download micromamba
-curl –L micro.mamba.pm/install.sh >install.sh
-# Installation de micromamba
-bash install.sh 
-source ~/.bashrc
-# Create an environement with python=3.10
-micromamba create -n Renv python=3.10 -c conda-forge
-# Activate the environement
-micromamba activate Renv
-# Install  R+package netcdf
-micromamba install r –c conda-forge
-micromamba install r-essentials –c conda-forge
-micromamba install r-ncdf4 –c conda-forge
+![Using micromamba to set up your python environement](../../clusters/Tools/micromamba.md)
 
-```
 Here's an example of a job header:
 Change the name of project to your project  
 ```
