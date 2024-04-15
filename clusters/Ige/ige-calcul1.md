@@ -210,27 +210,8 @@ srun --mpi=pmix -n 1 -c 4 -N 1  matlab  -nodisplay -nosplash -nodesktop < test.m
    https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html
    Micromamba is just faster then conda
    
-```
-   # Download micromamba
+![Using micromamba to set up your python environement](../../clusters/Tools/micromamba.md)
 
-curl -L micro.mamba.pm/install.sh >install.sh
-
-# Installation de micromamba
-
-bash install.sh
-
-source ~/.bashrc
-
-# Creation d’un environnment avec python=3.10
-
-micromamba create -n myenv python=3.10 -c conda-forge
-
-# Activation de l’environnement
-
-micromamba activate myenv
-
-micromamba install YOUR_MODULE -c conda-forge
-```
 
 5. Job Accounting 
 
