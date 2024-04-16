@@ -29,5 +29,6 @@ As for GPU ressources and IA computing  , there is another cluster named bigfoot
 
 
 # Tools 
+
 ![Using vscode to connect to Gricad cluster](./clusters/Tools/vscode.md)
 ![Using micromamba to set up your python environement](./clusters/Tools/micromamba.md)
