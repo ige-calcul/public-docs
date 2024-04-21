@@ -50,7 +50,7 @@ Please send and email to `mondher.chekki@uXXXX-gYYYY-aZZZZ.fr OR ige-support@uXX
 | srun       | srun  -n $NBTASKS $EXE    |  Run jobs interactively  on the cluster    |
 | srun       | srun  --mpi=pmix -n $NBTASKS $EXE    |  Run MPI jobs on the cluster    |
 | scancel       |  scancel JOBID    | End or cancel a queued job.     |
-| sacct       |  sacct -j JOBID     | Show information about current and previous jobs.      |
+| sacct       |  sacct -j JOBID     | Show information about current and previous jobs (cf 5. Job Accounting for example)     |
 | scontrol   | scontrol show job JOBID    | Show more details about a running job |
 | sinfo      |  sinfo    | Get information about the resources on available nodes that make up the HPC cluster      |
 
@@ -237,10 +237,10 @@ Interestingly, you can get near-realtime information about your running program 
 sstat -j JOBID
 ```
 
-It is possible to get informations and statistics  about you job after they are finished using the **sacct/sreport** command (sacct -h for more help)
+It is possible to get informations and statistics  about you job after they are finished using the **sacct/sreport** command (**sacct -e** for more help)
 
 ```
-chekkim@ige-calcul1:~$ sacct  -j 51  --format="Account,JobID,JobName,NodeList,CPUTime,MaxRSS,State%20"
+chekkim@ige-calcul1:~$ sacct  -j 51  --format="Account,JobID,JobName,NodeList,CPUTime,elapsed,MaxRSS,State%20"
    Account        JobID    JobName        NodeList    CPUTime     MaxRSS                State
 ---------- ------------ ---------- --------------- ---------- ---------- --------------------
    cryodyn 51             helloMPI     ige-calcul1   00:00:20                       COMPLETED
