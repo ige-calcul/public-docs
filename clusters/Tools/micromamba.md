@@ -18,7 +18,13 @@ micromamba activate myenv
 
 micromamba install YOUR_MODULE -c conda-forge
 ```
+>:warning: In a submission job, you will probably add the following to activate your account
 
+```
+. $WORKDIR/micromamba/etc/profile.d/micromamba.sh
+micromamba activate myenv
+
+```
 
 **Example:** Create R environement and install R packages
 
