@@ -14,7 +14,7 @@ Before using slurm, make sure that your are able to connect to the server
 ssh   your_agalan_login@ige-calcul1.u-ga.fr
 ```
 
-If you want to connect without using a password and fom outside the lab, add these 4 lines to the file $HOME/.ssh/config (create it if it does not exit)
+If you want to connect without using a password and from outside the lab, add these 4 lines to the file $HOME/.ssh/config (create it if you don't have it)
 
 ```
 Host calcul1
@@ -81,9 +81,15 @@ Consider you have a script in one of the programming languages such as Python, M
 
 The below section explains a step by step process to creating and submitting a simple job. Also, the SBATCH script is created and used for the execution of a python script or fortran code.
 
-1. Prepare your code/script
+1. Prepare your data/code/script
 
-Write your python script or compile your fortran code 
+Copy your files to the server with rsync
+
+```
+rsync -rav  YOUR_DIRECTORY  calcul1:/workdir/your_slurm_account/your_agalan_login/
+```
+
+Then Write your python script or compile your fortran code 
 
 **Example of Hello World in MPI `hello_mpi.f90`**
 
