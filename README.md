@@ -8,6 +8,7 @@ The following documentation will guide you through the different steps you need 
 
 # Computing for IGE/External users
 
+
 Gricad infrastructure provides a lot of ressources for all the labs of Grenoble University. It includes CPU/GPU ressources
 
 For now the most used cluster is dahu which is used for CPU ressources
