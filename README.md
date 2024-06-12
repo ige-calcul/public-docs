@@ -4,7 +4,7 @@ Here are the sources of the jupyter book visible [here](https://ige-calcul.githu
 
 In docs, you can find a collection of .md files and jupyter notebooks that are organized in the _toc.yml file
 
-To contribute to the jupoyter book or propose corrections, you should do the following steps :
+To contribute to the jupyter book or propose corrections, you should do the following steps :
   - set up an issue describing the contribution/correction and assign it to yourself or someone else
   - if you propose a change :
      - set up a branch either on github or after having cloned the repo on your laptop
