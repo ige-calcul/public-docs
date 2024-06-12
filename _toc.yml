@@ -2,16 +2,14 @@
 
 format: jb-book
 root: index
-
-parts:
-    chapters:
-    - file: getting-started
-    - file: computing-clusters
-      sections:
-      - file: clusters/Ige/connection 
-      - file: clusters/Ige/ige-calcul1 
-      - file: clusters/Gricad/dahu 
-    - file: data-warehouses
-    - file: softwares
-    - file: events
+chapters:
+- file: getting-started
+- file: computing-clusters
+  sections:
+  - file: clusters/Ige/connection 
+  - file: clusters/Ige/ige-calcul1 
+  - file: clusters/Gricad/dahu 
+- file: data-warehouses
+- file: softwares
+- file: events
  
