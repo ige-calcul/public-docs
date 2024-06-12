@@ -1,4 +1,10 @@
-# ige-calcul1
+(igecal1)=
+
+# IGE clusters
+
+
+IGE computing servers are ige-calcul1, ige-calcul2, ige-calcul3, ige-calcul4
+
 
 ## Slurm
 

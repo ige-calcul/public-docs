@@ -1,4 +1,6 @@
-# Welcome to IGE Computing Ressources
+# IGE Computing
+
+Welcome to IGE Computing ressources
 
 ```{tableofcontents}
 ```

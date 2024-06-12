@@ -1,3 +1,5 @@
+(vscode)=
+
 # Vscode
 
 ## Use vscode to run directly on a dahu or  dahu node
