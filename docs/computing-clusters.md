@@ -19,7 +19,7 @@ For both cases you will need to log in to a special interface and create an acco
 
 You can also have a look to [a more detailed documentation from Gricad](https://gricad-doc.univ-grenoble-alpes.fr/hpc/)
 
-As for GPU ressources and IA computing, there is [another cluster named bigfoot](https://gricad-doc.univ-grenoble-alpes.fr/hpc/joblaunch/job_gpu/))
+As for GPU ressources and IA computing, there is [another cluster named bigfoot](https://gricad-doc.univ-grenoble-alpes.fr/hpc/joblaunch/job_gpu/)
 
 Some tools are described in the following pages :
   - {ref}`vscode<vscode>`
