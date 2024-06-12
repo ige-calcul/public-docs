@@ -6,7 +6,6 @@ chapters:
 - file: docs/getting-started
 - file: docs/computing-clusters
   sections:
-  - file: docs/clusters/Ige/connection 
   - file: docs/clusters/Ige/ige-calcul1 
   - file: docs/clusters/Gricad/dahu 
 - file: docs/data-warehouses
