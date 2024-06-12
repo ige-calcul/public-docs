@@ -1,5 +1,5 @@
 
-## Connect to Gricad clusters
+# Connect to Gricad clusters
 
 More details about Griccad infrastructure are available here:
 
