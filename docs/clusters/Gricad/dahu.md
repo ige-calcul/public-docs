@@ -1,7 +1,7 @@
 
-# Connect to Gricad clusters
+# Gricad clusters
 
-More details about Griccad infrastructure are available here:
+More details about Gricad infrastructure are available here:
 
 **https://gricad-doc.univ-grenoble-alpes.fr/hpc/**
 
