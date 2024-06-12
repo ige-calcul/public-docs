@@ -1,6 +1,8 @@
 
 # Gricad clusters
 
+## First connection
+
 More details about Gricad infrastructure are available here:
 
 **https://gricad-doc.univ-grenoble-alpes.fr/hpc/**
