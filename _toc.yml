@@ -1,15 +1,15 @@
 # Table of contents
 
 format: jb-book
-root: index
+root: docs/index
 chapters:
-- file: getting-started
-- file: computing-clusters
+- file: docs/getting-started
+- file: docs/computing-clusters
   sections:
-  - file: clusters/Ige/connection 
-  - file: clusters/Ige/ige-calcul1 
-  - file: clusters/Gricad/dahu 
-- file: data-warehouses
-- file: softwares
-- file: events
+  - file: docs/clusters/Ige/connection 
+  - file: docs/clusters/Ige/ige-calcul1 
+  - file: docs/clusters/Gricad/dahu 
+- file: docs/data-warehouses
+- file: docs/softwares
+- file: docs/events
  

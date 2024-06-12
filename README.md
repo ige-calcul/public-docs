@@ -4,7 +4,7 @@
 If you need fast access to a small computing ressources or if you want to run matlab or other programs without any time limits, you can have access to IGE cluster, which was set up for that
 The following documentation will guide you through the different steps you need to know to start computing immedialtely
  
-![Ige computing servers](./clusters/Ige/ige-calcul1.md)
+![Ige computing servers](docs/clusters/Ige/ige-calcul1.md)
 
 # Computing for IGE/External users
 
@@ -18,7 +18,7 @@ For both cases you will need to log in to a special interface and create an acco
 
 @Ige, we are a providing a straighforward documentation , to start computing rapidly
 
-![Gricad computing servers: Dahu](./clusters/Gricad/dahu.md)
+![Gricad computing servers: Dahu](docs/clusters/Gricad/dahu.md)
 
 You can also have a look to a more detailed documentation from Gricad
 
@@ -31,5 +31,5 @@ As for GPU ressources and IA computing  , there is another cluster named bigfoot
 
 # Tools 
 
-![Using vscode to connect to Gricad cluster](./clusters/Tools/vscode.md)
-![Using micromamba to set up your python environement](./clusters/Tools/micromamba.md)
+![Using vscode to connect to Gricad cluster](docs/clusters/Tools/vscode.md)
+![Using micromamba to set up your python environement](docs/clusters/Tools/micromamba.md)
