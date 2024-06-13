@@ -2,7 +2,11 @@
 
 This repo contains the sources of [IGE Computing jupyter book](https://ige-calcul.github.io/public-docs/docs/index.html)
 
+## Organization
+
 In sub-repo docs, you will find a collection of markdown files and jupyter notebooks that are organized in chapters and sections described in the _toc.yml file
+
+## Contribute
 
 To contribute to the jupyter book or propose corrections, you should do the following steps :
   - set up an issue describing the contribution/correction and assign it to yourself or someone else
@@ -18,6 +22,8 @@ If you are the one making the modifications, two solutions :
 Then, in both cases, initiate a pull request from your branch and assign a reviewer
 
 The convention is that the branch name should be issueXX_keyword to link it to the issue 
+
+## Build 
 
 The local build of the jupyter book is possible and recommanded to check the output of your modification, in your local repo :
    - install the libraries : ```pip install -r requirements.txt``` (to be done just once)
