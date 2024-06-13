@@ -1,12 +1,25 @@
 # IGE Scientific Computation Ressources
 
-Here are the sources of the jupyter book visible [here](https://ige-calcul.github.io/public-docs/docs/index.html)
+This repo contains the sources of [IGE Computing jupyter book](https://ige-calcul.github.io/public-docs/docs/index.html)
 
-In docs, you can find a collection of .md files and jupyter notebooks that are organized in the _toc.yml file
+In sub-repo docs, you will find a collection of markdown files and jupyter notebooks that are organized in chapters and sections described in the _toc.yml file
 
 To contribute to the jupyter book or propose corrections, you should do the following steps :
   - set up an issue describing the contribution/correction and assign it to yourself or someone else
-  - if you propose a change :
-     - set up a branch either on github or after having cloned the repo on your laptop
-     - do your modifications on this branch
-     - create a pull request proposing to compare the main branch to your branch, add a reviewer 
+ 
+If you are the one making the modifications, two solutions :
+  - either you do it online : you create a branch, modify the files in it
+  - either you do it locally (for bigger modifications or reorganization) :
+     -  clone the repo locally ```git@github.com:ige-calcul/public-docs.git```
+     -  create a new branch from main : ```git checkout -b issue_test main```
+     -  do your modifications
+     -  push your modifications online : ```git push --set-upstream origin issue_test```
+
+Then, in both cases, initiate a pull request from your branch and assign a reviewer
+
+The convention is that the branch name should be issueXX_keyword to link it to the issue 
+
+The local build of the jupyter book is possible and recommanded to check the output of your modification, in your local repo :
+   - install the libraries : ```pip install -r requirements.txt``` (to be done just once)
+   - build the book : ```jupyter-book build .```
+   - open _build/html/index.html in a browser
