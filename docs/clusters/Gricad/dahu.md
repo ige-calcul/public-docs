@@ -2,6 +2,11 @@
 
 # Gricad clusters
 
+1. [First connection](#First connection)
+2. [Running jobs on Gricad clusters](#Running jobs on Gricad clusters)
+3. [Storage on Gricad clusters](#Storage on Gricad clusters)
+4. [Elmer usage on Gricad clusters](#Elmer usage on Gricad clusters)
+
 ## First connection
 
 More details about Gricad infrastructure are available here:
@@ -10,13 +15,9 @@ More details about Gricad infrastructure are available here:
 
 **Get your account on Gricad**
 
-If you have an **agalan** login/password
+If you have an **agalan** login/password, create your account [here](https://perseus.univ-grenoble-alpes.fr/create-account/portal-agalan)
 
-https://perseus.univ-grenoble-alpes.fr/create-account/portal-agalan
-
-if not, create an external account with the email from your institution (private email @gmail/@yahoo are not allowed)
-
-https://perseus.univ-grenoble-alpes.fr/create-account/form
+if not, create an external account with the email from your institution (private email @gmail/@yahoo are not allowed)  [here](https://perseus.univ-grenoble-alpes.fr/create-account/form)
 
 Once you created your account, you should receive an email from perseus that asks you to validate your account with a **KEY** provided in the email
 
@@ -24,16 +25,6 @@ Connect again to perseus and enter the provided **KEY** et it should be ok.
 
 It should take 1 day to get your account activated. If you nee a rapid accesss, feel free to contact **mondher.chekki@XXXXX**
 
-  ```mermaid
-graph TD;
-A[f-dahu] --> B(dahu33);
-A --> C(........);
-A --> D(dahu192);
-A --> E(dahu-fat1);
-A --> F(............);
-A --> G(dahu-fat4);
-A --> H(dahu-visu);
-```
   
 **Create an ssh key**
 ```  
@@ -50,7 +41,7 @@ a public key : id_rsa.pub
 
 Then create the **$HOME/.ssh/config** file on your computer , in which you must enter the bastion and server information for the connection.
 
-replace login_gricad with yours 
+
   
 For Dahu server:  
   
@@ -60,14 +51,15 @@ ProxyCommand ssh -qX login_gricad@trinity.u-ga.fr nc 129.88.197.54 22
 User login_gricad  
 GatewayPorts yes
 ``` 
-  
+
+*replace login_gricad with yours*
   
 Next, you need to set the correct rights:  
   
 **chmod ugo-rwx .ssh/config**  
 **chmod u+rw .ssh/config**  
   
-keep read/write rights only for the user and the private key: id_rsa  
+*keep read/write rights only for the user and the private key: id_rsa*
   
 Then, copy the ssh keys  
  ```
@@ -93,32 +85,19 @@ ssh dahu
 
 Once you are connected to dahu, you will be able to run jobs with the scheduler named OAR 
 
-An introduction to OAR is described here  
-
-https://gricad-doc.univ-grenoble-alpes.fr/hpc/joblaunch/job_management
+An introduction to OAR is described [here](https://gricad-doc.univ-grenoble-alpes.fr/hpc/joblaunch/job_management)
 
 Basically, to perform computations, you don't have to do them on the server you're connected to (front-end), but on other servers (compute nodes) accessible from the front-end.
   
 Hence you need to use a job scheduler (OAR) to launch calculations on the nodes.  
 
-For example, let's say that you need to run R calculations on the server
+For example, let's say that you need to run R calculations on the server :
 
-To install R packages
+  - To install R packages, either use [nix](https://gricad-doc.univ-grenoble-alpes.fr/hpc/softenv/nix/#r-packages) or [guix](https://gricad-doc.univ-grenoble-alpes.fr/hpc/softenv/guix/) environement or use [micromamba](../../clusters/Tools/micromamba.md)
 
-Either use **nix/guix** environement  
 
-**Nix:**
-https://gricad-doc.univ-grenoble-alpes.fr/hpc/softenv/nix/#r-packages
+  - Here's an example of a job header:
 
-**Guix:**
-https://gricad-doc.univ-grenoble-alpes.fr/hpc/softenv/guix/
-
-Or **conda/micromamba** : **micromamba** is faster
-
-![Using micromamba to set up your python environement](../../clusters/Tools/micromamba.md)
-
-Here's an example of a job header:
-Change the name of project to your project  
 ```
 $ cat job_exemple.oar
   
@@ -135,10 +114,12 @@ micromamba activate Renv
 R CMD BATCH ....
 or
 Rscript ....
-
 ```
+
+*Change the name of project to your project*
   
 **Description:**  
+
 ```
 #OAR -l nodes=1/core=1,walltime=01:30:00
 ```  
@@ -159,11 +140,16 @@ If you need to use immediatly the node  without waiting add this  (yo need to as
 #OAR -t devel
 ```
 **Memory**
-You have different type of nodes with different features (use recap.py  to see all of them). The memory you are using in a job is equal to:
+
+You have different type of nodes with different features (use ```recap.py``` to see all of them). 
+
+The memory you are using in a job is equal to:
 ```
 n_cores_asked x ( total_mem/n_cores)
 ```
-If  you want the whole memory, you should asked for all available cores (n_cores)
+
+If  you want the whole memory, you should asked for all available cores (n_cores) in one node
+
 ```
 [f-dahu /home/chekkim ]$ recap.py  
 ========================================================================================  
@@ -201,14 +187,17 @@ If  you want the whole memory, you should asked for all available cores (n_cores
 | dahu-visu| Silver 4216| 2 | 32 | 192 |system_hdd | none | NO |  
 ========================================================================================
 ```
-To run the job in 
+
+
+  - To run the job do 
 ```
 chmod 750 job_exemple.oar  
 oarsub -S ./job_exemple.oar
 ```
+
 **Use the interactive mode**
 
-If you are developping a code, it is better to have acces to a node for debugging issues. In the passive mode , if you make a small mistake , then you  have to submit your job again and wait in the queue.
+If you are developping a code, it is better to have acces to a node for debugging issues. In the passive mode, if you make a small mistake, then you have to submit your job again and wait in the queue.
 Using the interactive mode allows to correct your mistake and run your code until you make sure that everything is working fine.
 
 To do that use **oarsub** with **-I** command:
@@ -227,9 +216,11 @@ oarsub -I -l nodes=1/core=1,walltime=04:30:00 --project sno-elmerice -t fat
 
 **Job Stats with OAR**
 
-Once your job is finished or in case it stops without any reasons, you can check the dashborad
+Once your job is finished or in case it stops without any reasons, you can check the dashboard
 
->:warning: **Replace MYJOBID with your JOBID**
+```{warning}
+**Replace MYJOBID with your JOBID**
+```
 
 https://gricad-dashboards.univ-grenoble-alpes.fr/d/RUyeEaIGz/colmet-dahu-jobs-stats?orgId=1&refresh=1h&var-Job_ID=**MYJOBID**&var-Node=All&from=now-24h&to=now
 
@@ -242,12 +233,7 @@ Here is an example of Memory usage for different nodes
 
 **Workdir/Datastorage on dahu** 
 
- ```mermaid
-graph TD;
-A[dahu node] --> B(/bettik);
-A --> C(/silenus);
-A --> D(/mantis);
-```
+
 
 You have access to the $HOME(/home/your_login), which is a limited space under quota (50GB max).  
 
@@ -257,60 +243,56 @@ Bettik is a parallel filesystem so it is very fast when it comes to write/read d
 
 This space is accessible to all nodes. 
 
-More info on Gricad Website
-
-https://gricad-doc.univ-grenoble-alpes.fr/hpc/data_management/bettik/
-  
+More info on [Gricad Website](https://gricad-doc.univ-grenoble-alpes.fr/hpc/data_management/bettik/)
   
 To copy data from your PC to /bettik, use the rsync command.  
-  
-Let's assume we have a folder: Data_Model  
-  
-We'd like to copy this folder to /bettik/login_gricad in order to use the data. 
 
+For example :
+
+  - Let's assume we have a folder: Data_Model  
   
-The copy is made with the command rsync: 
+  - We'd like to copy this folder to /bettik/login_gricad in order to use the data. 
+
+  - The copy is made with the command rsync: 
 
   ```
 rsync -rav Data_Model dahu:/bettik/login_gricad/  
   ```
 
-To copy data from dahu to your PC:  
+  - To copy data from dahu to your PC:  
 
-( be careful there's the dot . which means copy here)  
- ```
+
+```
 rsync -rav dahu:/bettik/login_gricad/Dossier_bettik .  
 ```
 
-If you have a local folder called Local_folder to which you want to copy data from /bettik  
+```{warning}
+be careful there's the dot . which means copy here
+ ```
+
+
+  - If you have a local folder called Local_folder to which you want to copy data from /bettik  
 
  ```
 rsync -rav dahu:/bettik/login_gricad/Dossier_bettik/ Local_folder/
 ```
 
->:warning: if you want to transfer huge data or a lot of files use mantis-cargo instead 
-
-https://gricad-doc.univ-grenoble-alpes.fr/hpc/data_management/data_transfer/
-
-Replace dahu per mantis-cargo.u-ga.fr
-
-```
-rsync -rav Data_Model login_gricad@mantis-cargo.u-ga.fr:/bettik/login_gricad/
+```{warning}
+If you want to transfer huge data or a lot of files use mantis-cargo instead 
+See https://gricad-doc.univ-grenoble-alpes.fr/hpc/data_management/data_transfer/
+Replace dahu by mantis-cargo.u-ga.fr in the previous commands
 ```
 
 **Other Datastorage available  on dahu: /silenus and /mantis** 
 
-Silenus is a parallel filesystem composed of SSD so it is very fast but consider this as a scratch as the files will be automatically deleted when they reach 60 days old.
+[Silenus](https://gricad-doc.univ-grenoble-alpes.fr/hpc/data_management/silenus/) is a parallel filesystem composed of SSD so it is very fast but consider this as a scratch as the files will be automatically deleted when they reach 60 days old.
 
-https://gricad-doc.univ-grenoble-alpes.fr/hpc/data_management/silenus/
+So If you need to save them, you have to copy them to /bettik workdir for short term preservation(<1an), or to the Mantis2 cloud storage for long term preservation(<5ans).
 
-So If you need to save them, you have  to copy them to /bettik workdir for short term preservation(<1an), or to the Mantis2 cloud storage for long term preservation(<5ans).
-
->:warning:  if your files are only accessed in read mode, and you still use them, you
-            should do a `touch <file>` or `touch -r <directory>` to update the change time as
-            HPC scratches do not update the access time.
-            Otherwise, they may be deleted 60 days after their creation.
-
+```{warning}
+If your files are only accessed in read mode, and you still use them, you should do a `touch <file>` or `touch -r <directory>` to update the change time as HPC scratches do not update the access time.
+Otherwise, they may be deleted 60 days after their creation.
+```
 
 Mantis is a cloud storage used for long term preservation
 
@@ -387,7 +369,10 @@ source ~/.nix-profile/setvars.sh >/dev/null
 ```
 
 In order to load Elmer modules , you have to put this on a config file **myconfig.sh** or in your **$HOME/.bashrc** and source it each time you need to use it
->:warning: If you put this in your .bashrc , it will be sourced automatically but may create conflict with other applications
+
+```{warning}
+If you put this in your .bashrc , it will be sourced automatically but may create conflict with other applications
+```
 
 ```
 source /applis/site/nix_nur.sh
