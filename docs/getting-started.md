@@ -10,7 +10,7 @@ Here you can find useful information about how we conduct scientific analysis, a
 
  - A quick way to back-up and access your work (scripts, notebooks, text files, etc.) from anywhere is to create a [github account](https://github.com/) and to synchronize your work there. Learn how to do it [here](https://github.com/meom-group/tutos/blob/master/git-github.md)
 
- - If you work with Python, we recommend that you use [conda](https://docs.conda.io/en/latest/) to manage your librairies via environments. Learn how to do it [here](https://github.com/meom-group/tutos/blob/master/conda.md)
+ - If you work with Python, we recommend that you use [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html) (a seamless/drop-in replacement for [conda](https://docs.conda.io/en/latest/)) to manage your librairies via environments. Learn how to do it [here](https://ige-calcul.github.io/public-docs/docs/clusters/Tools/micromamba.html#mamba)
 
  - Some like to use [jupyter notebooks](https://jupyter.org/) to have code and corresponding plots in the same document, along with some text, equations and/or pictures. Learn how to install and use them [here](jupyter.md)
 
