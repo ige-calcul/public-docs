@@ -10,13 +10,13 @@ Here you can find useful information about how we conduct scientific analysis, a
 
  - A quick way to back-up and access your work (scripts, notebooks, text files, etc.) from anywhere is to create a [github account](https://github.com/) and to synchronize your work there. Learn how to do it [here](https://github.com/meom-group/tutos/blob/master/git-github.md)
 
- - If you work with Python, we recommend that you use [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html) (a seamless/drop-in replacement for [conda](https://docs.conda.io/en/latest/)) to manage your librairies via environments. Learn how to do it [here](https://ige-calcul.github.io/public-docs/docs/clusters/Tools/micromamba.html#mamba)
+ - If you work with Python, we recommend that you use [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html) (a seamless/drop-in replacement for [conda](https://docs.conda.io/en/latest/)) to manage your librairies via environments. Learn how to do it [here](clusters/Tools/micromamba.md)
 
  - Some like to use [jupyter notebooks](https://jupyter.org/) to have code and corresponding plots in the same document, along with some text, equations and/or pictures. Learn how to install and use them [here](jupyter.md)
 
  - You may want to access some remote computers in order to have more ressources than on your personnal laptop, or to access specific datasets. For this you have several options:
-    - the lab servers ige-calcX allow you to access some CPUs and GPUs. Learn how to access and use them [here](https://ige-calcul.github.io/public-docs/docs/clusters/Ige/ige-calcul1.html#)
-    - the Grenoble meso computing center [GRICAD](https://gricad.univ-grenoble-alpes.fr/) for bigger computations. Learn how to use this resource [here](https://ige-calcul.github.io/public-docs/docs/clusters/Gricad/dahu.html#)
+    - the lab servers ige-calcX allow you to access some CPUs and GPUs. Learn how to access and use them [here](clusters/Ige/ige-calcul1.md)
+    - the Grenoble meso computing center [GRICAD](https://gricad.univ-grenoble-alpes.fr/) for bigger computations. Learn how to use this resource [here](clusters/Gricad/dahu.md)
     - the national supercomputers located at [IDRIS](http://www.idris.fr/), [CINES](https://www.cines.fr/) or [CEA](https://www-hpc.cea.fr/fr/complexe/tgcc-JoliotCurie.htm) for even bigger computations [tutorials to come soon]
 
 A list of commonly-used software and links to useful resources is available [here](https://github.com/meom-group/tutos/blob/master/software.md)
