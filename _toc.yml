@@ -9,7 +9,8 @@ chapters:
   - file: docs/clusters/Ige/ige-calcul1 
   - file: docs/clusters/Gricad/dahu 
 - file: docs/data-warehouses
-- file: docs/softwares
+- file: docs/modeling-systems
+- file: docs/software-development
 - file: docs/events
 - file: docs/awesome-ige-calcul
  
