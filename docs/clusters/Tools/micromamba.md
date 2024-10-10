@@ -12,7 +12,7 @@ source ~/.bashrc
 ```
 
 ```{warning}
- $WORKDIR is a large filesystem, do not use the $HOME directory for installation
+ WORKDIR is a large filesystem, do not use the HOME directory for installation
 ```
 
 2. Create an environment with python=3.10
@@ -54,7 +54,7 @@ micromamba activate myenv
 
 ```
 micromamba install r  r-base  r-essentials –c conda-forge
-micromamba install r-ncdf4 –c conda-forge```
+micromamba install r-ncdf4 –c conda-forge
 ```
 
  
