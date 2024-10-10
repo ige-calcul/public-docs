@@ -12,7 +12,7 @@ Here you can find useful information about how we conduct scientific analysis, a
 
  - If you work with Python, we recommend that you use [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html) (a seamless/drop-in replacement for [conda](https://docs.conda.io/en/latest/)) to manage your librairies via environments. Learn how to do it [here](clusters/Tools/micromamba.md)
 
- - Some like to use [jupyter notebooks](https://jupyter.org/) to have code and corresponding plots in the same document, along with some text, equations and/or pictures. Learn how to install and use them [here](jupyter.md)
+ - Some like to use [jupyter notebooks](https://jupyter.org/) to have code and corresponding plots in the same document, along with some text, equations and/or pictures. Learn how to install and use them [here](https://docs.jupyter.org/en/latest/)
 
  - You may want to access some remote computers in order to have more ressources than on your personnal laptop, or to access specific datasets. For this you have several options:
     - the lab servers ige-calcX allow you to access some CPUs and GPUs. Learn how to access and use them [here](clusters/Ige/ige-calcul1.md)
