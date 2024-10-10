@@ -3,9 +3,9 @@
 # IGE clusters
 
 
-IGE computing servers are ige-calcul1, ige-calcul2, ige-calcul3, ige-calcul4
+IGE computing servers are ige-calcul1, ige-calcul2, ige-calcul3, ige-calcul4.
 
-You can replace calcul1 by calcul2, calcul3 or calcul4 in the following documentation according to your use
+You can replace calcul1 by calcul2, calcul3 or calcul4 in the following documentation according to your use.
 
 
 ## Slurm
@@ -13,39 +13,44 @@ You can replace calcul1 by calcul2, calcul3 or calcul4 in the following document
 Slurm is an open-source workload manager/scheduler for the Discovery cluster. Slurm is basically the intermediary between the Login nodes and compute nodes. Hence, the Slurm scheduler is the gateway for the users on the login nodes to submit work/jobs to the compute nodes for processing.
 
 
-The [official documentation for slurm](https://slurm.schedmd.com/quickstart.html)
+The [official documentation for slurm](https://slurm.schedmd.com/quickstart.html).
 
 
 ## Connection to the server
 
-Before using slurm, make sure that your are able to connect to the server
+Before using slurm, make sure that you are able to connect to the server:
 
 ```
 ssh your_agalan_login@ige-calcul1.u-ga.fr
 ```
 
-If you want to connect without using a password and from outside the lab, add these 4 lines to the file $HOME/.ssh/config (create it if you don't have it)
+If you want to connect without using a password and from outside the lab, add these 4 lines to the file $HOME/.ssh/config (create it if you don't have it):
 
 ```
 Host calcul1
-ProxyCommand ssh -qX   your_agalan_login@ige-ssh.u-ga.fr nc -w 60  ige-calcul1.u-ga.fr  22
-User  your_agalan_login
-GatewayPorts yes
+  ProxyCommand ssh -qX your_agalan_login@ige-ssh.u-ga.fr nc -w 60 ige-calcul1.u-ga.fr 22
+  User your_agalan_login
+  GatewayPorts yes
 ```
-then you should  create and copy your ssh keys to the server
-```
+
+then you should create and copy your ssh keys to the server:
+
+```bash
 ssh-keygen -t rsa (tape Enter twice without providing a password)
-ssh-copy-id  your_agalan_login@ige-ssh.u-ga.fr
+ssh-copy-id your_agalan_login@ige-ssh.u-ga.fr
 ssh-copy-id calcul1
 ```
-Now, you should be able to connect without any password
-```
+
+Now, you should be able to connect without any password:
+
+```bash
 ssh calcul1
 ```
 
-Then you should ask for a storage space and a slurm account
+Then you should ask for a storage space and a slurm account.
 
 Available slurm accounts are:
+
 ```
 cryodyn
 meom
@@ -57,9 +62,11 @@ ecrins
 ice3
 chianti
 ```
-Please send and email to `mondher.chekki@uXXXX-gYYYY-aZZZZ.fr OR ige-support@uXXXX-gYYYY-aZZZZ.fr, asking for storage under /workdir and a slurm account by providing the name of your team and the space you need (1G,10G,100G,1TB)
 
-## Available softwares
+Please send an email to `mondher.chekki@uXXXX-gYYYY-aZZZZ.fr OR ige-support@uXXXX-gYYYY-aZZZZ.fr, asking for storage under /workdir and a slurm account by providing the name of your team and the space you need (1G,10G,100G,1TB).
+
+
+## Available software
 
 ```
 - NCO
@@ -68,24 +75,24 @@ Please send and email to `mondher.chekki@uXXXX-gYYYY-aZZZZ.fr OR ige-support@uXX
 - NCVIEW
 - QGIS
 - MATLAB (through modules,i.e: module load matlab)
-
 ```
+
+
 ## Commands
 
+| Command  | Syntax        | Description   |
+| ---------|:-------------:|:-------------:|
+| sbatch   | `sbatch JOBSCRIPT`                  | Submit a batch script to Slurm for processing. |
+| squeue   | `squeue -u`                         | Show information about your job(s) in the queue. The command when run without the -u flag, shows a list of your job(s) and all other jobs in the queue. |
+| srun     | `srun  -n $NBTASKS $EXE`            | Run jobs interactively  on the cluster |
+| srun     | `srun  --mpi=pmix -n $NBTASKS $EXE` | Run MPI jobs on the cluster |
+| scancel  | `scancel JOBID`                     | End or cancel a queued job. |
+| sacct    | `sacct -j JOBID`                    | Show information about current and previous jobs (cf 5. Job Accounting for example) |
+| scontrol | `scontrol show job JOBID`           | Show more details about a running job |
+| sinfo    | `sinfo`                             | Get information about the resources on available nodes that make up the HPC cluster |
 
-| Command  | Syntax | Description |
-| ------------- |:-------------:|:-------------:|
-|    sbatch   |```sbatch JOBSCRIPT```      |Submit a batch script to Slurm for processing.      |
-|    squeue  | ```squeue -u```      |Show information about your job(s) in the queue. The command when run without the -u flag, shows a list of your job(s) and all other jobs in the queue.      |
-| srun       | ```srun  -n $NBTASKS $EXE```    |  Run jobs interactively  on the cluster    |
-| srun       | ```srun  --mpi=pmix -n $NBTASKS $EXE```    |  Run MPI jobs on the cluster    |
-| scancel       |  ```scancel JOBID```    | End or cancel a queued job.     |
-| sacct       |  ```sacct -j JOBID```     | Show information about current and previous jobs (cf 5. Job Accounting for example)     |
-| scontrol   | ```scontrol show job JOBID```    | Show more details about a running job |
-| sinfo      |  ```sinfo```    | Get information about the resources on available nodes that make up the HPC cluster      |
 
-
-## Job submission example 
+## Job submission example
 
 Consider you have a script in one of the programming languages such as Python, MatLab, C, Fortran , or Java. How would you execute it using Slurm?
 
@@ -93,17 +100,17 @@ The following section explains a step by step process to creating and submitting
 
 1. Prepare your data/code/script
 
-Copy your files to the server with rsync
+Copy your files to the server with rsync:
 
-```
+```bash
 rsync -rav  YOUR_DIRECTORY  calcul1:/workdir/your_slurm_account/your_agalan_login/
 ```
 
-Then Write your python script or compile your fortran code 
+Then write your python script or compile your fortran code.
 
 **Example of Hello World in MPI `hello_mpi.f90`**
 
-```
+```fortran
 PROGRAM hello_world_mpi
 include 'mpif.h'
 
@@ -123,26 +130,29 @@ call MPI_FINALIZE(ierror)
 END PROGRAM
 ```
 
-Compile the code using mpif90
-```
+Compile the code using mpif90:
+
+```bash
 mpif90 -o hello_mpi  hello_mpi.f90
 ```
-Now you have an executable hello_mpi that you can run using slurm
+
+Now you have an executable hello_mpi that you can run using slurm.
 
 2. Create your submission job
 
 A job consists in two parts: **resource requests** and **job steps**.
 
-**Resource requests** consist in a number of CPUs, computing expected duration, amounts of RAM or disk space, etc.
-**Job steps** describe tasks that must be done, software which must be run.
+* **Resource requests** consist in a number of CPUs, computing expected duration, amounts of RAM or disk space, etc.
+* **Job steps** describe tasks that must be done, software which must be run.
 
 The typical way of creating a job is to write a submission script. A submission script is a shell script. If they are prefixed with SBATCH, are understood by Slurm as parameters describing resource requests and other submissions options. You can get the complete list of parameters from the sbatch manpage man sbatch or sbatch -h.
 
 In this example, `job.sh` contains ressources request (lines starting with #SBATCH) and the run of the previous generated executable.
 
-```
+```bash
 #!/bin/bash
-#SBATCH -J helloMPI 
+
+#SBATCH -J helloMPI
 
 #SBATCH --nodes=1
 #SBATCH --ntasks=4
@@ -154,80 +164,82 @@ In this example, `job.sh` contains ressources request (lines starting with #SBAT
 #SBATCH --output helloMPI.%j.output
 #SBATCH --error  helloMPI.%j.error
 
-
 cd /workdir/$USER/
 
 ## Run an MPI program
-
 srun  --mpi=pmix -N 1  -n  4 ./hello_mpi
 
-
-## Run a python script 
+## Run a python script
 #  python script.py
-
 ```
 
-```job.sh``` request 4 cores for 1 hour, along with 4000 MB of RAM, in the default queue. 
-The account is important in order to get statisticis about the number of CPU hours consumed within the account:
-_make sure to be part of an acccount before submitting any jobs_
+`job.sh` request 4 cores for 1 hour, along with 4000 MB of RAM, in the default queue.
 
-When started, the job would run the hello_mpi program using 4 cores in parallel. 
-To run the `job.sh` script use ```sbatch``` command and ```squeue``` to see the state of the job
+The account is important in order to get statisticis about the number of CPU hours consumed within the account: _make sure to be part of an acccount before submitting any jobs_
 
-```
+When started, the job would run the hello_mpi program using 4 cores in parallel. To run the `job.sh` script use `sbatch` command and `squeue` to see the state of the job:
+
+```bash
 chekkim@ige-calcul1:~$ sbatch job.sh
 Submitted batch job 51
 chekkim@ige-calcul1:~$ squeue
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
                 51    calcul helloMPI  chekkim  R       0:02      1 ige-calcul1
 ```
+
 3. Interactive mode
 
+For interactive mode you should use the srun/salloc commands.
 
-For interactive mode  you should use the srun/salloc commands 
+Either you get the ressources using **srun** followed by **--pty bash -i**. Then you can run any program you need.
 
-Either you get the ressources using **srun** followed by **--pty bash -i**
-Then you can run any program you need
-
-Or you use **srun** followed by **your program** and then it will allocate the ressource , run the program and exit
-
+Or you use **srun** followed by **your program** and then it will allocate the ressource, run the program and exit.
 
 An equivalent to the `job.sh` will be :
 
   - Run mpi hello example with 4 cores
 
-```srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi```
+```bash
+srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi
+```
 
 ==> This will run and exit once it is done
 
 or
 
-```srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 --pty bash -i
-srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi``` 
+```bash
+srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 --pty bash -i
+srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi
+```
 
 ==> keep the ressources even when the program is done
 
   - Run Qgis with 8 threads (graphic interface)
 
-```srun --mpi=pmix -n 1 -c 8 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 qgis```
+```bash
+srun --mpi=pmix -n 1 -c 8 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 qgis
+```
 
   - Run Jupiter notebook with 4 threads
 
-```srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 jupyter notebook```
+```bash
+srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 jupyter notebook
+```
 
   - Run matlab  with 4 threads
 
-```module load matlab/R2022b
+```bash
+module load matlab/R2022b
 srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 matlab  -nodisplay -nosplash -nodesktop  -r "MATLAB_command"
-or
+# or
 srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 matlab  -nodisplay -nosplash -nodesktop  -batch "MATLAB_command"
-or
+# or
 srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 matlab  -nodisplay -nosplash -nodesktop < test.m
 ```
 
-  - Example of job_matlab.sh : 
+  - Example of job_matlab.sh :
 
-```
+```bash
 #!/bin/bash
 #SBATCH -J matlab
 
@@ -245,36 +257,33 @@ srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 matl
 cd /workdir/$USER/
 
 ## Run on Matlab
-
 module load matlab/R2022b
 srun --mpi=pmix -n 1 -c 4 -N 1  matlab -nodisplay -nosplash -nodesktop  -r "MATLAB_command"
-or
+# or
 srun --mpi=pmix -n 1 -c 4 -N 1  matlab -nodisplay -nosplash -nodesktop  -batch "MATLAB_command"
-or
+# or
 srun --mpi=pmix -n 1 -c 4 -N 1  matlab  -nodisplay -nosplash -nodesktop < test.m
-
 ```
 
-4.  For Python users
+4. For Python users
 
-We recommend that youuse [micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) instead of conda/miniconda 
-   
+We recommend that you use [micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) instead of conda/miniconda.
+
 Micromamba is just faster then conda !
-   
-Check [here](../../clusters/Tools/micromamba.md) how to set up your python environement with micromamba
 
+Check [here](../../clusters/Tools/micromamba.md) how to set up your python environement with micromamba.
 
-5. Job Accounting 
+5. Job Accounting
 
-Interestingly, you can get near-realtime information about your running program (memory consumption, etc.) with the sstat command
+Interestingly, you can get near-realtime information about your running program (memory consumption, etc.) with the sstat command:
 
-```
+```bash
 sstat -j JOBID
 ```
 
-It is possible to get informations and statistics  about you job after they are finished using the **sacct/sreport** command (**sacct -e** for more help)
+It is possible to get informations and statistics  about you job after they are finished using the **sacct/sreport** command (**sacct -e** for more help):
 
-```
+```bash
 chekkim@ige-calcul1:~$ sacct  -j 51  --format="Account,JobID,JobName,NodeList,CPUTime,elapsed,MaxRSS,State%20"
    Account        JobID    JobName        NodeList    CPUTime     MaxRSS                State
 ---------- ------------ ---------- --------------- ---------- ---------- --------------------
