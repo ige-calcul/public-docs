@@ -14,14 +14,14 @@ source ~/.bashrc
  WORKDIR is a large filesystem, do not use the HOME directory for installation
 ```
 
-2. Create an environement with python=3.10
-
+2. Create an environment with python=3.10
+   
 ```bash
 micromamba create -n myenv python=3.10 -c conda-forge
 ```
 
-3. Activate the environement and install a package
-
+3. Activate the environment and install a package
+   
 ```bash
 micromamba activate myenv
 micromamba install YOUR_MODULE -c conda-forge
