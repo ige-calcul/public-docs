@@ -30,6 +30,13 @@ Their structure is extremely simple: a list of links, each potentially described
 - [INRAE DipSO](https://science-ouverte.inrae.fr/fr/la-science-ouverte/la-direction-pour-la-science-ouverte) the INRAE's open science department
 - [RDA](https://www.rd-alliance.org/) the worldwide alliance for research data
 - [ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html) a self hosted server to share data in several ways
+- [GNU licensing recommendations](https://www.gnu.org/licenses/license-recommendations.html) advice on choosing a license for your software
 
 ## Responsible Research
 - [DORA](https://sfdora.org/about-dora/) the "Declaration on Research Assessment" supporting the Responsible Research
+
+## Unix and unix-like environments
+- [The Archlinux wiki](https://wiki.archlinux.org/) although specific to Archlinux, a great resource to understand how Linux systems work
+
+## Software development
+- [Pro GIT](https://git-scm.com/book/en/v2) a freely accessible book to quickly get started with git
