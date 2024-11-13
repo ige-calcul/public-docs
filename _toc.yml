@@ -6,10 +6,10 @@ chapters:
 - file: docs/getting-started
 - file: docs/computing-clusters
   sections:
-  - file: docs/clusters/Ige/ige-calcul1 
-  - file: docs/clusters/Gricad/dahu 
+  - file: docs/clusters/Ige/ige-calcul1
+  - file: docs/clusters/Gricad/dahu
+  - file: docs/clusters/TGCC/TGCC
 - file: docs/data-warehouses
 - file: docs/softwares
 - file: docs/events
 - file: docs/awesome-ige-calcul
- 
