@@ -8,6 +8,9 @@ In sub-repo docs, you will find a collection of markdown files and jupyter noteb
 
 ## Contribute
 
+To contribute to this jupyter book a procedure originated from software development in a collaborative workflow is described below.
+To make it easier, we chose to simplify this workflow, especially for the beginning of writing the documentation which involves the creation of separate pages.
+
 To contribute to the jupyter book or propose corrections, you should do the following steps :
   - set up an issue describing the contribution/correction and assign it to yourself or someone else
  
