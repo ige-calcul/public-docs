@@ -8,8 +8,19 @@ In sub-repo docs, you will find a collection of markdown files and jupyter noteb
 
 ## Contribute
 
-To contribute to this jupyter book a procedure originated from software development in a collaborative workflow is described below.
+To contribute to this jupyter book a procedure inspired by collaborative software development workflows is described below.
+
 To make it easier, we chose to simplify this workflow, especially for the beginning of writing the documentation which involves the creation of separate pages.
+
+You are now able to modify directly one or multiple files in the main branch, the jupyter book will then be automatically modified, look for the green flag in the Actions tab.
+
+To avoid conflicts arising from two people modifying the same file at the same time, we suggest that you warn the IGE-calcul team that you are about to contribute to the book by sending a mail (it will also show to the other member that some people are working on the documentation !)
+
+A descriptive comment on what you did and why is still strongly recommended when commiting a change.
+
+Follow the original procedure described just below if you want a review of your work by someone else.
+
+### Stricter procedure to contribute 
 
 To contribute to the jupyter book or propose corrections, you should do the following steps :
   - set up an issue describing the contribution/correction and assign it to yourself or someone else
