@@ -6,7 +6,7 @@
 ```bash
 cd $WORKDIR
 curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
-./bin/micromamba shell init -s bash -p $WORKDIR/micromamba
+./bin/micromamba shell init -s bash  ./micromamba
 source ~/.bashrc
 ```
 
@@ -27,7 +27,9 @@ micromamba activate myenv
 micromamba install YOUR_MODULE -c conda-forge
 ```
 
->:warning: In a submission job, you will probably add the following to activate your environment
+```{warning}
+ In a submission job, you will probably add the following to activate your environment
+```
 
 ```bash
 . $WORKDIR/micromamba/etc/profile.d/micromamba.sh
