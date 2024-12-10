@@ -46,6 +46,6 @@ micromamba create -n Renv python=3.10 -c conda-forge
 micromamba activate Renv
 
 # Install R+ netcdf package
-micromamba install r r-base r-essentials –c conda-forge
-micromamba install r-ncdf4 –c conda-forge
+micromamba install r r-base r-essentials -c conda-forge
+micromamba install r-ncdf4 -c conda-forge
 ```
