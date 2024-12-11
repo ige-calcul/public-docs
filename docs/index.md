@@ -87,25 +87,6 @@ Know better about the models developped @IGE
 
 
 :::{grid-item-card} 
-:link: ../docs/
-:link-type: doc
-:class-header: bg-light
-
-Getting Started
-^^^
-```{image} ../images/nodedahu153RSS.PNG
-:alt: nodedahu153RSS
-:class: bg-primary mb-1
-:width: 200px
-:align: center
-```
-
-Get used to the environment
-
-:::
-
-
-:::{grid-item-card} 
 :link: ../docs/software-development
 :link-type: doc
 :class-header: bg-light
@@ -122,26 +103,6 @@ Software Development
 What are th best tools to use
 
 :::
-
-
-:::{grid-item-card} 
-:link: ../docs/events
-:link-type: doc
-:class-header: bg-light
-
-Events
-^^^
-```{image} ../images/nodedahu153RSS.PNG
-:alt: nodedahu153RSS
-:class: bg-primary mb-1
-:width: 200px
-:align: center
-```
-
-Know more about the state of the art
-
-:::
-
 
 :::{grid-item-card} 
 :link: ../docs/events
