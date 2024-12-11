@@ -2,7 +2,7 @@
 
 ## The MAR regional climate model
 
-The MAR model is hosted at (https://gitlab.com/Mar-Group/MARv3)[https://gitlab.com/Mar-Group/MARv3]; this page contains the model code and documentation (how to install, prepare your setup, and run the model). Instuctions specific to Dahu can be found in the issues.
+The MAR model is hosted at [https://gitlab.com/Mar-Group/MARv3](https://gitlab.com/Mar-Group/MARv3); this page contains the model code and documentation (how to install, prepare your setup, and run the model). Instuctions specific to Dahu can be found in the issues.
 
 ## Material from the IGE WRF and WRF-Chem 2024 training workshop
 
