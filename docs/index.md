@@ -15,8 +15,8 @@ This is the entry point to our user documentation. The following pages list the 
 
 Getting Started
 ^^^
-```{image} ../images/nodedahu153RSS.PNG
-:alt: nodedahu153RSS
+```{image} ../images/getting-started.jpg
+:alt: getting-started
 :class: bg-primary mb-1
 :width: 200px
 :align: center
@@ -34,8 +34,8 @@ Get used to the environment
 
 Computing Clusters
 ^^^
-```{image} ../images/nodedahu153RSS.PNG
-:alt: nodedahu153RSS
+```{image} ../images/computing-clusters.png
+:alt: computing-clusters
 :class: bg-primary mb-1
 :width: 200px
 :align: center
@@ -53,8 +53,8 @@ Connect to available clusters
 
 Data
 ^^^
-```{image} ../images/nodedahu153RSS.PNG
-:alt: nodedahu153RSS
+```{image} ../images/data-clusters.png
+:alt: data-clusters
 :class: bg-primary mb-1
 :width: 200px
 :align: center
@@ -71,8 +71,8 @@ Data
 
 Modeling Systems 
 ^^^
-```{image} ../images/nodedahu153RSS.PNG
-:alt: nodedahu153RSS
+```{image} ../images/modeling-systems.jpeg
+:alt: modeling-systems
 :class: bg-primary mb-1
 :width: 200px
 :align: center
@@ -90,8 +90,8 @@ Know better about the models developped @IGE
 
 Software Development
 ^^^
-```{image} ../images/nodedahu153RSS.PNG
-:alt: nodedahu153RSS
+```{image} ../images/software-development.jpg
+:alt: software-development
 :class: bg-primary mb-1
 :width: 200px
 :align: center
@@ -108,8 +108,8 @@ What are th best tools to use
 
 Events
 ^^^
-```{image} ../images/nodedahu153RSS.PNG
-:alt: nodedahu153RSS
+```{image} ../images/events.jpg
+:alt: events.jpg
 :class: bg-primary mb-1
 :width: 200px
 :align: center
