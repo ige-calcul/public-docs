@@ -1,4 +1,8 @@
-# GUI applications on clusters
+(clustertips)=
+
+# General tips
+
+## GUI applications on clusters
 
 Even though calculators are accessed via a text-based SSH connection, you can usually open applications that have a
 graphical user interface (GUI) and which are installed on the calculator (for example: `ncview`). In this case, the
