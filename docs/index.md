@@ -12,13 +12,13 @@ This is the entry point to our user documentation. The following pages list the 
 :gutter: 3
 
 :::{grid-item-card} 
-:link: docs/getting-started
+:link: ../docs/getting-started
 :link-type: doc
 :class-header: bg-light
 
 Getting Started
 ^^^
-```{image} images/nodedahu153RSS.PNG
+```{image} ../images/nodedahu153RSS.PNG
 :alt: nodedahu153RSS
 :class: bg-primary mb-1
 :width: 200px
