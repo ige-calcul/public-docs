@@ -15,13 +15,13 @@ source ~/.bashrc
 ```
 
 2. Create an environment with python=3.10
-   
+
 ```bash
 micromamba create -n myenv python=3.10 -c conda-forge
 ```
 
 3. Activate the environment and install a package
-   
+
 ```bash
 micromamba activate myenv
 micromamba install YOUR_MODULE -c conda-forge
@@ -36,13 +36,17 @@ micromamba install YOUR_MODULE -c conda-forge
 micromamba activate myenv
 ```
 
+```{warning}
+ On some clusters (for example Dahu), your micromamba process will likely be killed by the system when you try to install environments or packages, because it uses too much memory. In this case, log in to a computation node to perform such tasks.
+```
+
 **Example:** Create R environment and install R packages
 
 ```bash
-# Create an environement with python=3.10
+# Create an environment with python=3.10
 micromamba create -n Renv python=3.10 -c conda-forge
 
-# Activate the environement
+# Activate the environment
 micromamba activate Renv
 
 # Install R+ netcdf package
