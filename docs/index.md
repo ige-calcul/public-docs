@@ -127,8 +127,8 @@ Know more about the state of the art
 
 Awesome IGE CALCUL
 ^^^
-```{image} ../images/nodedahu153RSS.PNG
-:alt: nodedahu153RSS
+```{image} ../images/awesome.jpg
+:alt: awesome
 :class: bg-primary mb-1
 :width: 200px
 :align: center
@@ -138,14 +138,21 @@ Most popular repositories on Github
 
 :::
 
+:::{grid-item-card} 
+:link: ../docs/about-ige-calcul
+:link-type: doc
+:class-header: bg-light
+
+About IGE CALCUL
+^^^
+```{image} ../images/about-us.jpg
+:alt: about-us
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+How to collaborate? How to use ige-calcul?
+
+:::
 
 
-
-
-
-
-
-
-
-
-Everything concerning the platform's organization and communication can be found on [this (private) repository](https://github.com/ige-calcul/private-docs).
