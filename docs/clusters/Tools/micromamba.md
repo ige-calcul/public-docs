@@ -24,7 +24,7 @@ micromamba create -n myenv python=3.10 -c conda-forge
 
 ```bash
 micromamba activate myenv
-micromamba install YOUR_MODULE -c conda-forge
+micromamba install package_name -c conda-forge
 ```
 
 ```{warning}
