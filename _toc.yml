@@ -12,6 +12,7 @@ chapters:
   - file: docs/clusters/TGCC/TGCC
 - file: docs/data-warehouses
 - file: docs/modeling-systems
+- file: docs/remote-sensing
 - file: docs/software-development
 - file: docs/events
 - file: docs/awesome-ige-calcul
