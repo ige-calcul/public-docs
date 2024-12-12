@@ -1,7 +1,7 @@
 # Modeling systems
 
 
-::::{grid} 1 1 2 1
+::::{grid} 1 1 1 2
 :class-container: text-center 
 :gutter: 3
 
@@ -10,7 +10,7 @@
 :link-type: doc
 :class-header: bg-light
 
-Getting Started
+MARv3
 ^^^
 ```{image} ../images/mar.png
 :alt: mar
@@ -29,7 +29,7 @@ MAR regional climate model
 :link-type: doc
 :class-header: bg-light
 
-Computing Clusters
+WRF-CHEM
 ^^^
 ```{image} ../images/wrf-chem.jpg
 :alt: wrf-chem
