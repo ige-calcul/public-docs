@@ -4,7 +4,7 @@
 This is the entry point to our user documentation. The following pages list the resources available for the platform, both internal and external, and explain access, usage and tips. These may relate to the many topics covered by the group, such as data warehouses, development tools, computation servers, modeling workflow and so on.
 
 
-::::{grid} 1 1 4 2
+::::{grid} 1 1 5 2
 :class-container: text-center 
 :gutter: 3
 
@@ -84,6 +84,25 @@ Know better about the models developped @IGE
 
 
 :::{grid-item-card} 
+:link: ../docs/remote-sensing
+:link-type: doc
+:class-header: bg-light
+
+Remote Sensing
+^^^
+```{image} ../images/remote-sensing.jpeg
+:alt: remote-sensing
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+
+Remote Sensing  @IGE
+
+:::
+
+
+:::{grid-item-card} 
 :link: ../docs/software-development
 :link-type: doc
 :class-header: bg-light
@@ -151,7 +170,7 @@ About IGE CALCUL
 :width: 200px
 :align: center
 ```
-How to collaborate? How to use ige-calcul?
+Collaborate 
 
 :::
 
