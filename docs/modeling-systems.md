@@ -1,7 +1,7 @@
 # Modeling systems
 
 
-::::{grid} 1 1 1 2
+::::{grid} 1 1 2 2
 :class-container: text-center 
 :gutter: 3
 
@@ -42,6 +42,37 @@ IGE WRF and WRF-Chem 2024 training workshop
 
 :::
 
+:::{grid-item-card} 
+:link: ../docs/elmer-ice
+:link-type: doc
+:class-header: bg-light
 
+ELMER/ICE
+^^^
+```{image} ../images/elmerice.jpg
+:alt: elmerice
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
 
+Finite Element Software for Ice Sheet, Glaciers and Ice Flow Modelling
+
+:::
+:::{grid-item-card} 
+:link: ../docs/nemo
+:link-type: doc
+:class-header: bg-light
+
+NEMO
+^^^
+```{image} ../images/nemo.png
+:alt: nemo
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+
+Nucleus for European Modelling of the Ocean
+:::
 
