@@ -92,6 +92,14 @@ Please send an email to `mondher.chekki@uXXXX-gYYYY-aZZZZ.fr OR ige-support@uXXX
 | sinfo    | `sinfo`                             | Get information about the resources on available nodes that make up the HPC cluster |
 
 
+## Available working directories
+
+There are 2 working directories available on the clusters
+```bash
+/workdir   (only on ige-calcul1 and ige-calcul4)
+/workdir2  (available on all clusters: SUMMER STORAGE)
+```
+
 ## Job submission example
 
 Consider you have a script in one of the programming languages such as Python, MatLab, C, Fortran , or Java. How would you execute it using Slurm?
