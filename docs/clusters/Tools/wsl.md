@@ -1,22 +1,37 @@
-1. Enable Developer Mode
 
-![](./images/wsl3.png)
+# Enable Windows Subsystem for Linux
 
-If you want to play with features aimed at developers, enable developer mode first. To do this on Windows 
 ```
-1. go to Settings > Update & Security > For Developers > Developer Mode.
-2. search directly in the search bar of windows “Developer mode”
+Type in the research bar: Turn Windows features
 ```
-You may be asked to reboot here.
-
-2. Enable Windows Subsystem for Linux
 
 ![](./images/wsl4.png)
 
-Once you have Developer Mode enabled, open the Start Menu and search for “Turn Windows Features On or Off“.
-A window will open. Tick the box next to the option that reads: “Windows Subsystem for Linux (Beta)”.
+Or for Windows french version 
+```
+Type in the research bar: Activer fonctionalités Windows
+```
+
+![](./images/wsl1.png)
+
+![](./images/wsl2.png)
 
 ```
-3. Reboot!
-4. Install ubuntu version 22 , from Microsoft/Windows store and then run the ubuntu application
+-  Reboot
+-  Install ubuntu  version 22 or later  , from Microsoft/Windows store and then run the ubuntu application
 ```
+
+
+```{warning}
+If you are not able to see theses feature, you need to enable developer mode . To do this on Windows 
+```
+
+```
+-  Go to Settings > Update & Security > For Developers > Developer Mode.
+-  Search directly in the search bar of windows “Developer mode”
+
+```
+![](./images/wsl3.png)
+
+
+
