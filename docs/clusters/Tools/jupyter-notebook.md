@@ -68,3 +68,17 @@ You should now  be able to access the notebook as if you were directly on the co
 ```{caution}
 If the default port 8888 is already in use, use  another port (8889):  you can specify it in the jupiter command (-port XXXX ) or by adding it to the $HOME/.jupyter/jupyter_notebook_config.py file
 ```
+
+
+`````{admonition} Install jupyterlab
+:class: tip
+micromamba  install  jupyterlab -c conda-forge
+Then replace in the browser tree by lab
+`````
+
+`````{admonition} Show personal kernel
+:class: tip
+python -m ipykernel install --user --name jupyter --display-name “Python 3.10 (Jupyter)”
+You will be able to select this kernel  **Python 3.10 (Jupyter)** on your web browser
+`````
+
