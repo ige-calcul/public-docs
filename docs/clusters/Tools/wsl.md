@@ -22,7 +22,7 @@ Type in the research bar: Activer fonctionalités Windows
 ```
 
 
-```{warning}
+```{caution}
 If you are not able to see theses feature, you need to enable developer mode . To do this on Windows 
 ```
 
