@@ -7,6 +7,15 @@ IGE computing servers are ige-calcul1, ige-calcul2, ige-calcul3, ige-calcul4.
 
 You can replace calcul1 by calcul2, calcul3 or calcul4 in the following documentation according to your use.
 
+### Features of the Servers
+
+|          | ige-calcul1     | ige-calcul2   | ige-calcul3    | ige-calcul4        |
+| ---------|:---------------:|:-------------:|:--------------:|:------------------:|
+| CPU      | 2 CPU 24c (48c) |2 CPU 18c (36c)|2 CPU 28c (56c) | 2 CPU 16c (32c)    |
+| RAM      |  256 Go         |  512 Go       |  768 Go        | 256 Go             |
+| GPU      | NVIDIA A40      |   NO          | NVIDIA RTX 6000| 2 NVIDIA RTX A4500 | 
+
+
 
 ## Slurm
 
