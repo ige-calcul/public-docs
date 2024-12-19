@@ -229,6 +229,10 @@ Here is an example of Memory usage for different nodes
 ![Dashbord Memory usage example](../../../images/nodedahu153RSS.PNG)
 
 
+##  Running jupyter notebooks on dahu/bigfoot
+
+ Please refer to this doc [How to run jupyter notebooks on dahu](../../clusters/Tools/jupyter-notebook.md)
+
 ## Storage on Gricad clusters
 
 **Workdir/Datastorage on dahu** 
