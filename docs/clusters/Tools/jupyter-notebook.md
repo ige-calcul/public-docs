@@ -72,13 +72,17 @@ If the default port 8888 is already in use, use  another port (8889):  you can s
 
 `````{admonition} Install jupyterlab
 :class: tip
+```
 micromamba  install  jupyterlab -c conda-forge
+```
 Then replace in the browser tree by lab
 `````
 
 `````{admonition} Show personal kernel
 :class: tip
+```
 python -m ipykernel install --user --name jupyter --display-name “Python 3.10 (Jupyter)”
+```
 You will be able to select this kernel  **Python 3.10 (Jupyter)** on your web browser
 `````
 
