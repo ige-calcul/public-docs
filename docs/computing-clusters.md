@@ -6,31 +6,6 @@ If you need fast access to a small computing ressources or if you want to run ma
 
 The {ref}`following documentation<igecal1>` will guide you through the different steps you need to know to start computing immediately.
 
-
-::::{grid} 1 1 2 1
-:class-container: text-center 
-:gutter: 3
-
-:::{grid-item-card} 
-:link: ../docs/clusters/ige-calcul1
-:link-type: doc
-:class-header: bg-light
-
-IGE Clusters
-^^^
-```{image} ../images/logo-IGE.png
-:alt: log-ige
-:class: bg-primary mb-1
-:width: 200px
-:align: center
-```
-
-How to access and run jobs on IGE
-
-:::
-
-
-
 ## Computing for IGE/External users
 
 Gricad infrastructure provides a lot of ressources for all the labs of Grenoble University. It includes CPU/GPU ressources.
@@ -41,24 +16,6 @@ Gricad is open for any student/researcher/engineer. If you have a contract with 
 
 For both cases you will need to log in to a special interface and create an account anyway to join a project (more details follow).
 
-:::{grid-item-card} 
-:link: ../docs/computing-clusters
-:link-type: doc
-:class-header: bg-light
-
-Gricad Clusters
-^^^
-```{image} ../images/logo-GRICAD.png
-:alt: logo-GRICAD
-:class: bg-primary mb-1
-:width: 200px
-:align: center
-```
-
-How to access and run jobs on Gricad
-
-:::
-
 
 @IGE, we are a providing a {ref}`straighforward documentation<dahu>`, to start computing rapidly.
 
@@ -68,18 +25,18 @@ As for GPU ressources and IA computing, there is [another cluster named bigfoot]
 
 Some tools are described in the following pages :
 
-::::{grid} 1 1 5 2
+::::{grid} 1 1 2 2
 :class-container: text-center 
 :gutter: 3
 
 :::{grid-item-card} 
-:link: ../docs/clusters/Tools/vscode
+:link: ../clusters/Tools/vscode
 :link-type: doc
 :class-header: bg-light
 
 VSCODE
 ^^^
-```{image} ../docs/clutsers/Tools/images/vscode.png
+```{image} ../clutsers/Tools/images/vscode.png
 :alt: vscode
 :class: bg-primary mb-1
 :width: 200px
@@ -91,13 +48,13 @@ Using VSCODE
 :::
 
 :::{grid-item-card} 
-:link: ../docs/clutsers/Tools/micromamba
+:link: ../clutsers/Tools/micromamba
 :link-type: doc
 :class-header: bg-light
 
 MICROMAMBA
 ^^^
-```{image} ../docs/clutsers/Tools/images/micromamba.png
+```{image} ../clutsers/Tools/images/micromamba.png
 :alt: getting-started
 :class: bg-primary mb-1
 :width: 200px
@@ -108,20 +65,20 @@ Using MICROMAMBA
 
 :::
 :::{grid-item-card} 
-:link: ../docs/clutsers/Tools/jupyter-notebook
+:link: ../clutsers/Tools/jupyter-notebook
 :link-type: doc
 :class-header: bg-light
 
-JUPYTER NOTEBBOK 
+JUPYTER NOTEBOOK 
 ^^^
-```{image}  ../docs/clutsers/Tools/images/logo-JUPYTER.jpg
+```{image}  ../clutsers/Tools/images/logo-JUPYTER.jpg
 :alt: getting-started
 :class: bg-primary mb-1
 :width: 200px
 :align: center
 ```
 
-Run a Jupyter Notebbok on the cluster 
+Run a Jupyter Notebook on the cluster 
 
 :::
 
