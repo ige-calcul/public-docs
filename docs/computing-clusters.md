@@ -30,13 +30,13 @@ Some tools are described in the following pages :
 :gutter: 3
 
 :::{grid-item-card} 
-:link: ../clusters/Tools/vscode
+:link: ./clusters/Tools/vscode
 :link-type: doc
 :class-header: bg-light
 
 VSCODE
 ^^^
-```{image} ../clusters/Tools/images/vscode.png
+```{image} ./clusters/Tools/images/vscode.png
 :alt: vscode
 :class: bg-primary mb-1
 :width: 200px
@@ -48,13 +48,13 @@ Using VSCODE
 :::
 
 :::{grid-item-card} 
-:link: ../clusters/Tools/micromamba
+:link: ./clusters/Tools/micromamba
 :link-type: doc
 :class-header: bg-light
 
 MICROMAMBA
 ^^^
-```{image} ../clusters/Tools/images/micromamba.png
+```{image} ./clusters/Tools/images/micromamba.png
 :alt: micromamba
 :class: bg-primary mb-1
 :width: 200px
@@ -65,13 +65,13 @@ Using MICROMAMBA
 
 :::
 :::{grid-item-card} 
-:link: ../clusters/Tools/jupyter-notebook
+:link: ./clusters/Tools/jupyter-notebook
 :link-type: doc
 :class-header: bg-light
 
 JUPYTER NOTEBOOK 
 ^^^
-```{image}  ../clusters/Tools/images/logo-JUPYTER.jpg
+```{image}  ./clusters/Tools/images/logo-JUPYTER.jpg
 :alt: jupyter-notebook
 :class: bg-primary mb-1
 :width: 200px
