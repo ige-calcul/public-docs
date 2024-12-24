@@ -36,7 +36,7 @@ Some tools are described in the following pages :
 
 VSCODE
 ^^^
-```{image} ./clusters/Tools/images/vscode.png
+```{image} ./clusters/Tools/images/vscode.jpg
 :alt: vscode
 :class: bg-primary mb-1
 :width: 200px
@@ -54,7 +54,7 @@ Using VSCODE
 
 MICROMAMBA
 ^^^
-```{image} ./clusters/Tools/images/micromamba.png
+```{image} ./clusters/Tools/images/micromamba.jpg
 :alt: micromamba
 :class: bg-primary mb-1
 :width: 200px
