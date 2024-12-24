@@ -1,7 +1,7 @@
 # Modeling systems
 
 
-::::{grid} 1 1 2 2
+::::{grid} 1 1 3 2
 :class-container: text-center 
 :gutter: 3
 
@@ -59,6 +59,7 @@ ELMER/ICE
 Finite Element Software for Ice Sheet, Glaciers and Ice Flow Modelling
 
 :::
+
 :::{grid-item-card} 
 :link: ../docs/nemo
 :link-type: doc
@@ -74,5 +75,22 @@ NEMO
 ```
 
 Nucleus for European Modelling of the Ocean
+:::
+
+:::{grid-item-card} 
+:link: ../docs/parflow
+:link-type: doc
+:class-header: bg-light
+
+PARFLOW
+^^^
+```{image} ../images/parflow.jpg
+:alt: parflow
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+
+Modular, parallel watershed flow model.
 :::
 
