@@ -5,28 +5,6 @@
 If you need fast access to a small computing ressources or if you want to run matlab or other programs without any time limits, you can have access to IGE cluster, which was set up for that.
 
 The {ref}`following documentation<igecal1>` will guide you through the different steps you need to know to start computing immediately.
-::::{grid} 1 1 1 2
-:class-container: text-center 
-:gutter: 3
-
-:::{grid-item-card} 
-:link: ./clusters/Ige/ige-calcul1
-:link-type: doc
-:class-header: bg-light
-
-Ige Clusters
-^^^
-```{image} ../images/ige-clusters.png
-:alt: ige-clusters
-:class: bg-primary mb-1
-:width: 200px
-:align: center
-```
-
-How to use Ige clusters
-
-:::
-
 
 ## Computing for all users
 
@@ -38,29 +16,7 @@ Gricad is open for any student/researcher/engineer. If you have a contract with 
 
 For both cases you will need to log in to a special interface and create an account anyway to join a project (more details follow).
 
-
 @IGE, we are a providing a {ref}`straighforward documentation<dahu>`, to start computing rapidly.
-
-::::{grid} 1 1 1 2
-:class-container: text-center 
-:gutter: 3
-
-:::{grid-item-card} 
-:link: ./clusters/Gricad/dahu
-:link-type: doc
-:class-header: bg-light
-
-Gricad Clusters
-^^^
-```{image} ../images/gricad-clusters.jpg
-:alt: gricad-clusters
-:class: bg-primary mb-1
-:width: 200px
-:align: center
-```
-How to use Gricad clusters
-
-:::
 
 You can also have a look to [a more detailled documentation from Gricad](https://gricad-doc.univ-grenoble-alpes.fr/hpc/).
 
