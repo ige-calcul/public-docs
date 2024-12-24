@@ -1,14 +1,18 @@
 (vscode)=
 
-# Run vscode directly on dahu frontend or a dahu node
+# Run vscode directly on cluster frontend or a cluster node
 
 Install the [Remote SSH extension](https://code.visualstudio.com/docs/remote/ssh). Ensure you have set up your `$HOME/.ssh/config` file and ssh keys so you can access dahu without any password. See [SSH-keys](../Gricad/dahu.md) for details.
 
-## Run on dahu
+## Run on the cluster
+
+```{note}
+This documentation is based on dahu cluster , but you can replace dahu by bigfoot or any other cluster available on Gricad
+```
 
 Open vscode on your local machine, and open a remote window to dahu (vscode should see your local ssh config file and so recognize the 'dahu' host). You will be connected to dahu frontend, and you should be to open your files/save them and submit a job from vscode terminal.
 
-## Run on a dahu node
+## Run on a cluster node
 
 If you want to edit or run code interactively in a job on dahu, you must do some additional configuration. You must be using a linux terminal (e.g. mobaxterm/putty) or you can do this using vscode.
 
