@@ -7,8 +7,8 @@ Here you can find useful information about how we conduct scientific analysis, a
 
  - We generally use GNU/Linux and MacOS distributions, so a prerequisiste is to know basic Unix Shell commands. If it is not your case, have a look at this [tutorial](https://swcarpentry.github.io/shell-novice/).
 
- - If you are a Windows user, make sure to activate the WSL [Windows Subsystem Linux](./clusters/Tools/wsl.md) to be able to use a linux virtual machine and connect to distant servers.
-
+ - If you are a Windows user, please read the following  [Windows User page](./clusters/Tools/windows_users.md). This will help you to connect to the clusters and set up your environment.
+   
  - If you use a mainstream GNU/Linux distribution such as Ubuntu or Fedora, you can install most of the basic scientific software you may need (such as the NetCDF libraries) via the system's package manager (`apt-get`, `dns`, etc.). If you are on MacOS, [brew](https://brew.sh/) is a good way to manage this task.
 
  - A quick way to back-up and access your work (scripts, notebooks, text files, etc.) from anywhere is to create a [github account](https://github.com/) and to synchronize your work there. Learn how to do it [here](https://github.com/meom-group/tutos/blob/master/git-github.md).
