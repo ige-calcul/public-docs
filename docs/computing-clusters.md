@@ -38,7 +38,7 @@ VSCODE
 ```{image} ./clusters/Tools/images/vscode.jpg
 :alt: vscode
 :class: bg-primary mb-1
-:width: 200px
+:width: 100px
 :align: center
 ```
 
@@ -56,7 +56,7 @@ MICROMAMBA
 ```{image} ./clusters/Tools/images/micromamba.jpg
 :alt: micromamba
 :class: bg-primary mb-1
-:width: 200px
+:width: 100px
 :align: center
 ```
 
@@ -73,7 +73,7 @@ JUPYTER NOTEBOOK
 ```{image}  ./clusters/Tools/images/logo-JUPYTER.jpg
 :alt: jupyter-notebook
 :class: bg-primary mb-1
-:width: 200px
+:width: 100px
 :align: center
 ```
 
