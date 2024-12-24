@@ -24,7 +24,7 @@ As for GPU ressources and IA computing, there is [another cluster named bigfoot]
 
 Some tools are described in the following pages :
 
-::::{grid} 1 1 2 2
+::::{grid} 1 1 1 3
 :class-container: text-center 
 :gutter: 3
 
@@ -38,7 +38,7 @@ VSCODE
 ```{image} ./clusters/Tools/images/vscode.jpg
 :alt: vscode
 :class: bg-primary mb-1
-:width: 100px
+:width: 200px
 :align: center
 ```
 
@@ -56,7 +56,7 @@ MICROMAMBA
 ```{image} ./clusters/Tools/images/micromamba.jpg
 :alt: micromamba
 :class: bg-primary mb-1
-:width: 100px
+:width: 200px
 :align: center
 ```
 
@@ -73,7 +73,7 @@ JUPYTER NOTEBOOK
 ```{image}  ./clusters/Tools/images/logo-JUPYTER.jpg
 :alt: jupyter-notebook
 :class: bg-primary mb-1
-:width: 100px
+:width: 200px
 :align: center
 ```
 
