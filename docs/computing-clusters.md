@@ -36,7 +36,7 @@ Some tools are described in the following pages :
 
 VSCODE
 ^^^
-```{image} ../clutsers/Tools/images/vscode.png
+```{image} ../clusters/Tools/images/vscode.png
 :alt: vscode
 :class: bg-primary mb-1
 :width: 200px
@@ -48,14 +48,14 @@ Using VSCODE
 :::
 
 :::{grid-item-card} 
-:link: ../clutsers/Tools/micromamba
+:link: ../clusters/Tools/micromamba
 :link-type: doc
 :class-header: bg-light
 
 MICROMAMBA
 ^^^
-```{image} ../clutsers/Tools/images/micromamba.png
-:alt: getting-started
+```{image} ../clusters/Tools/images/micromamba.png
+:alt: micromamba
 :class: bg-primary mb-1
 :width: 200px
 :align: center
@@ -65,14 +65,14 @@ Using MICROMAMBA
 
 :::
 :::{grid-item-card} 
-:link: ../clutsers/Tools/jupyter-notebook
+:link: ../clusters/Tools/jupyter-notebook
 :link-type: doc
 :class-header: bg-light
 
 JUPYTER NOTEBOOK 
 ^^^
-```{image}  ../clutsers/Tools/images/logo-JUPYTER.jpg
-:alt: getting-started
+```{image}  ../clusters/Tools/images/logo-JUPYTER.jpg
+:alt: jupyter-notebook
 :class: bg-primary mb-1
 :width: 200px
 :align: center
