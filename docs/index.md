@@ -121,6 +121,26 @@ What are th best tools to use
 :::
 
 :::{grid-item-card} 
+:link: ../docs/good-practices
+:link-type: doc
+:class-header: bg-light
+
+
+Good Practices
+^^^
+```{image} ../images/good-practices.png
+:alt: good-practices
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+
+What are the Best Practices
+
+:::
+
+
+:::{grid-item-card} 
 :link: ../docs/events
 :link-type: doc
 :class-header: bg-light
