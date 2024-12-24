@@ -44,8 +44,14 @@ https://sourceforge.net/projects/vcxsrv/files/latest/download
 
 then, once installed, run Xlaunch
 
-![](./images/xlaunch.png)
- 
+![](./images/xlaunch1.PNG)
+
+![](./images/xlaunch2.PNG)
+
+![](./images/xlaunch3.PNG)
+
+![](./images/xlaunch4.PNG)
+
 then launch ubuntu on your personal machine and place this line in your $HOME/.bashrc terminal
 
 ```
