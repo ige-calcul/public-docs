@@ -1,12 +1,16 @@
 # Computing clusters
 
-## Computing for IGE users exclusively
+## IGE Clusters
 
 If you need fast access to a small computing ressources or if you want to run matlab or other programs without any time limits, you can have access to IGE cluster, which was set up for that.
 
 The {ref}`following documentation<igecal1>` will guide you through the different steps you need to know to start computing immediately.
 
-## Computing for all users
+
+## External clusters
+
+
+1. Gricad
 
 Gricad infrastructure provides a lot of ressources for all the labs of Grenoble University. It includes CPU/GPU ressources.
 
@@ -21,6 +25,16 @@ For both cases you will need to log in to a special interface and create an acco
 You can also have a look to [a more detailled documentation from Gricad](https://gricad-doc.univ-grenoble-alpes.fr/hpc/).
 
 As for GPU ressources and IA computing, there is [another cluster named bigfoot](https://gricad-doc.univ-grenoble-alpes.fr/hpc/joblaunch/job_gpu/).
+
+
+
+2. CINES
+3. TGCC
+4. Jean-zay
+
+
+
+## Code deployement
 
 Some tools are described in the following pages :
 
