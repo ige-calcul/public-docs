@@ -9,4 +9,11 @@ Elmer/Ice is an open-source code based on the finite element method for modeling
 Elmer/Ice is based on the numerical core of the [Elmer multiphysics finite element code](https://www.elmerfem.org/blog/), mainly developed at the CSC - IT Center for Science - in Espoo, Finland. 
 Elmer/Ice is a set of tools dedicated to problem-solving in glaciology. These tools are of various kinds: firstly, specific developments are added to the Elmer code on particular aspects of glacier flow (rheological laws of ice, friction laws, asymptotic thin-layer equations, inverse methods, etc.); secondly, configurations and examples are provided to deal with a wide range of problems; thirdly, the user community is supported by a [website](http://elmerice.elmerfem.org/) , a [documentation wiki](http://elmerfem.org/elmerice/wiki/doku.php)  , and the organization of [beginners' courses and user workshops](http://elmerfem.org/elmerice/wiki/doku.php?id=courses:courses)
 Elmer/Ice was labeled in 2020  by  a specialized commission of Ocean and Atmosphere [CSOA](https://www.insu.cnrs.fr/en/person/specialized-commission-ocean-atmosphere-csoa)  for 5 years. This label was renewed for 2025-2029
+
+##  People involved
+
+|   Name       |  Position         |  Team            |  Building          | What                                                 |
+| -------------|:-----------------:|:----------------:|:------------------:|:----------------------------------------------------:|
+| M. chekki    | HPC Engineer      | Cryodyn          |    MCP             | Porting the code on clusters (Gricad/TGCC/CINES/IDRIS)+ SNO referent |
+
  
