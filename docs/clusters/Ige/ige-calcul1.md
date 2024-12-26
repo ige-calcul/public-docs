@@ -99,6 +99,7 @@ Please send an email to `mondher.chekki@uXXXX-gYYYY-aZZZZ.fr OR ige-support@uXXX
 | sacct    | `sacct -j JOBID`                    | Show information about current and previous jobs (cf 5. Job Accounting for example) |
 | scontrol | `scontrol show job JOBID`           | Show more details about a running job |
 | sinfo    | `sinfo`                             | Get information about the resources on available nodes that make up the HPC cluster |
+| seff     | `seff JOBID`                        | Provides statistics related to the efficiency of resource usage by the completed job.
 
 
 ## Available working directories
@@ -202,6 +203,30 @@ Submitted batch job 51
 chekkim@ige-calcul1:~$ squeue
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
                 51    calcul helloMPI  chekkim  R       0:02      1 ige-calcul1
+```
+Once the job is finished you can get direct statistics using the seff command (for more statistics , refer to the accounting section below)
+Here is the outputs for another job , more memory consuming (we asked in this job for 20000 MB ~~ 19.53 GB)
+
+```bash
+[ige-calcul1  /home/chekkim ]$    seff 501759
+Job ID: 501759
+Cluster: ige-calcul1
+User/Group: chekkim/ige-cryodyn
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:01:16
+CPU Efficiency: 49.35% of 00:02:34 core-walltime
+Job Wall-clock time: 00:01:17
+Memory Utilized: 16.00 GB
+Memory Efficiency: 81.94% of 19.53 GB (19.53 GB/node)
+```
+
+```{warning}
+In case you ask for less memory , for this case let's say 10G , you will get the following message:
+srun: error: ige-calcul1: task 0: Out Of Memory
+srun: launch/slurm: _step_signal: Terminating StepId=501757.0
+slurmstepd-ige-calcul1: error: Detected 1 oom-kill event(s) in StepId=501757.0. Some of your processes may have been killed by the cgroup out-of-memory handler.
 ```
 
 3. Interactive mode
