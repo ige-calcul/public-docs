@@ -3,7 +3,7 @@
 Here you can find all the informations regarding data warehouses
 
 
-# Examples of Data warehouse usage
+## Examples of Data warehouse usage
 
 ::::{grid} 1 1 1 3
 :class-container: text-center 
@@ -23,7 +23,7 @@ ERDDAP
 :align: center
 ```
 
-How to use ERDDAP
+How to access and use ERDDAP
 
 :::
 
