@@ -94,3 +94,19 @@ PARFLOW
 Modular, parallel watershed flow model.
 :::
 
+:::{grid-item-card} 
+:link: ../docs/oggm
+:link-type: doc
+:class-header: bg-light
+
+OGGM
+^^^
+```{image} ../images/oggm.png
+:alt: parflow
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+Modular model for glacier dynamics
+:::
+
