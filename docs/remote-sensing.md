@@ -6,3 +6,17 @@ One of the main activities involves quantifying glacier flow velocities using im
 Another aspect of remote sensing activities focuses on measuring changes in glacier and polar ice sheet thickness using altimetry data and photogrammetry techniques. Python packages for analyzing geospatial data and digital elevation models are actively developed at IGE and are available at [https://xdem.readthedocs.io/en/stable/](https://xdem.readthedocs.io/en/stable/) and [https://geoutils.readthedocs.io/en/stable/](https://geoutils.readthedocs.io/en/stable/).
 
 Finally, the remote sensing team develops algorithms for image segmentation and classification to monitor changes in the physical characteristics of glaciated objects. Features of interest include crevasses and fractures forming on glacier surfaces and beneath ice shelves, rift zones, as well as glacier boundaries in mountainous regions.
+
+##  People involved
+
+|   Name       |  Position         |  Team            |  Building          | What                                                 |
+| -------------|:-----------------:|:----------------:|:------------------:|:----------------------------------------------------:|
+| F. Brun      | Researcher        | C2H              |    Glacio          | Pléiades/SPOT DEM processing, photogrammetry |
+| A. Dehecq    | Researcher        | Cryodyn          |    Glacio          | Elevation change, photogrammetry, historical spy imagery, dev. of xdem and geoutils |
+| R. Millan    | Researcher        | Cryodyn          |    MCP             | Ice velocity processing, basal melting rates, crevasses mapping |
+| A. Rabatel   | Researcher        | Cryodyn          |    Glacio          | Ice velocity processing of moutain glaciers, Snow line altitude delineation |
+| K. Shahateet | Post-doc          | Cryodyn          |    MCP             | Ice shelf damage using deep learning, SAR |
+| L. Charrier  | Post-doc          | Cryodyn          |    Glacio          | Inversion of time series of surface flow velocities |
+| L. Gimenes   | Engineer          | Cryodyn          |    OSUG-B          | Ice shelf basal melting rates |
+| N. Lioret    | Engineer          | Cryodyn          |    Glacio          | Ice velocity processing with Pléiades imagery, and time serie inversion |
+ 
