@@ -17,6 +17,7 @@ Finally, the remote sensing team develops algorithms for image segmentation and 
 | A. Rabatel   | Researcher        | Cryodyn          |    Glacio          | Ice velocity processing of moutain glaciers, Snow line altitude delineation |
 | K. Shahateet | Post-doc          | Cryodyn          |    MCP             | Ice shelf damage using deep learning, SAR |
 | L. Charrier  | Post-doc          | Cryodyn          |    Glacio          | Inversion of time series of surface flow velocities |
+| L. Béraud    | PhD               | Cryodyn          |    Glacio          | Post-processing of elevation change time-series |
 | L. Gimenes   | Engineer          | Cryodyn          |    OSUG-B          | Ice shelf basal melting rates |
 | N. Lioret    | Engineer          | Cryodyn          |    Glacio          | Ice velocity processing with Pléiades imagery, and time serie inversion |
  
