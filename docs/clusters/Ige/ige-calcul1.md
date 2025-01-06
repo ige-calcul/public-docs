@@ -77,7 +77,7 @@ Please send an email to `mondher.chekki@uXXXX-gYYYY-aZZZZ.fr OR ige-support@uXXX
 - MATLAB (through modules,i.e: module load matlab)
 ```
 
-## Slurm: Sumbit a job on the cluster
+## Slurm: Submit a job on the cluster
 
 Slurm is an open-source workload manager/scheduler for the Discovery cluster. Slurm is basically the intermediary between the Login nodes and compute nodes.
 
