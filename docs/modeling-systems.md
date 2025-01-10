@@ -110,3 +110,19 @@ OGGM
 Modular model for glacier dynamics
 :::
 
+:::{grid-item-card} 
+:link: ../docs/odinn
+:link-type: doc
+:class-header: bg-light
+
+ODINN
+^^^
+```{image} ../images/oggm.png
+:alt: odinn
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+Hybrid model based on differentiable programming to study large-scale climate-glacier interactions and physics
+:::
+
