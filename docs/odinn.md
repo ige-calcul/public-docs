@@ -17,10 +17,10 @@ For more details about the model, please check [our GitHub page](https://github.
 
 |   Name       |  Position         |  Team            |  Building          | What                                                 |
 | -------------|:-----------------:|:----------------:|:------------------:|:----------------------------------------------------:|
-| Jordi Bolibar    | CNRS Research Scientist      | Cryodyn          |    MCP             | Direction and development |
-| Alban Gossard   | Postdoc researcher      | Cryodyn          |    OSUG-B             | Method development and ice flow processes inversions |
-| Romain Millan  | CNRS Research Scientist      | Cryodyn          |    MCP            | Remote sensing observations |
-| Julien Le Sommer  | CNRS Research Director      | MEOM          |    MCP            | Methodological strategy |
+| [Jordi Bolibar](https://jordibolibar.org/)    | CNRS Research Scientist      | Cryodyn          |    MCP             | Direction and development |
+| [Alban Gossard](https://albangossard.github.io/)   | Postdoc researcher      | Cryodyn          |    OSUG-B             | Method development and ice flow processes inversions |
+| [Romain Millan](https://sites.google.com/view/romainmillan/home)  | CNRS Research Scientist      | Cryodyn          |    MCP            | Remote sensing observations |
+| [Julien Le Sommer](https://lesommer.github.io/)  | CNRS Research Director      | MEOM          |    MCP            | Methodological strategy |
 
  
 
