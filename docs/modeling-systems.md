@@ -126,3 +126,18 @@ ODINN
 Hybrid model based on differentiable programming to study large-scale climate-glacier interactions and physics
 :::
 
+:::{grid-item-card} 
+:link: ../docs/lmdz
+:link-type: doc
+:class-header: bg-light
+
+LMDZ
+^^^
+```{image} ../images/lmdz.jpg
+:alt: lmdz
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+An atmospheric general circulation model 
+:::
