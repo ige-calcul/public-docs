@@ -133,7 +133,7 @@ Hybrid model based on differentiable programming to study large-scale climate-gl
 
 LMDZ
 ^^^
-```{image} ../images/lmdz.jpg
+```{image} ../images/lmdz.png
 :alt: lmdz
 :class: bg-primary mb-1
 :width: 200px
