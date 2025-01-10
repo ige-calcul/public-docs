@@ -117,7 +117,7 @@ Modular model for glacier dynamics
 
 ODINN
 ^^^
-```{image} ../images/oggm.png
+```{image} ../images/odinn_logo.png
 :alt: odinn
 :class: bg-primary mb-1
 :width: 200px
