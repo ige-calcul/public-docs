@@ -52,7 +52,7 @@ Here are some of the features expected in this first round. Everything underneat
 ### Cloud computing interface
 - Deployment of a JupyterHub/Lab associated with GRICAD resources mobilized by the NOVA service
 - For each user: 1 to 4 CPUs and 28 GB RAM guaranteed (expandable according to needs and timing), 50GB individual storage + NFS mounting of a 50 TB SUMMER space for medium-term back-up 
-- Accessible from anywhere via an address such as ige-m2.osug.fr and authentication via GitHub/GitLab
+- Accessible from anywhere via an address such as open-repro-lab.osug.fr and authentication via GitHub/GitLab
 - Preloaded Pangeo-type computing environment + customization options 
 - Persistent workdir and git workflow  
 - Option to switch to GRICAD (more ressources) possible during the course of the internship
