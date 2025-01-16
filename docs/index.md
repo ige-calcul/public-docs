@@ -45,6 +45,24 @@ Connect to available clusters
 
 :::
 
+:::{grid-item-card} 
+:link: ../docs/openreprolab
+:link-type: doc
+:class-header: bg-light
+
+OpenReproLab
+^^^
+```{image} ../images/OpenReproLab.png
+:alt:  openreprolab
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+
+How to create Jupyter notebooks for Open Science
+
+:::
+
 
 :::{grid-item-card} 
 :link: ../docs/data-warehouses
