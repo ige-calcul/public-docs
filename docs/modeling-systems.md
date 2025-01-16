@@ -1,7 +1,7 @@
 # Modeling systems
 
 
-::::{grid} 1 1 4 2
+::::{grid} 1 1 5 2
 :class-container: text-center 
 :gutter: 3
 
@@ -140,4 +140,15 @@ LMDZ
 :align: center
 ```
 An atmospheric general circulation model 
+:::
+
+neXtSIM
+^^^
+```{image} ../images/BBM.png
+:alt: nextsim
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+The next generation Sea Ice Model 
 :::
