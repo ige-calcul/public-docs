@@ -15,3 +15,18 @@ Ressources :
   - [gitlab repo for sources](https://forge.nemo-ocean.eu/nemo)
   - [Join the newsletter](https://listes.ipsl.fr/sympa/info/nemo-newsletter)
   - [Discourse group](https://nemo-ocean.discourse.group/)
+
+##  People involved
+
+|   Name       |  Position         |  Team            |  Building          | 
+| -------------|:-----------------:|:----------------:|:------------------:|
+| P. Mathiot   | Research Engineer | Cryodyn          |    MCP             | 
+| N. Jourdain  | Researcher        | Cryodyn          |    MCP             | 
+| T. Penduff   | Researcher        | MEOM             |    MCP             | 
+| J. Le Sommer | Researcher        | MEOM             |    MCP             |
+| L. Brodeau   | Research Engineer | MEOM             |    MCP             | 
+| A. Albert    | Research Engineer | MEOM             |    MCP             | 
+| J.M. Brankart| Research Engineer | MEOM             |    MCP             | 
+| P. Brasseur  | Researcher        | MEOM             |    MCP             | 
+
+
