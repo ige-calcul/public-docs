@@ -52,7 +52,7 @@ Connect to available clusters
 
 OpenReproLab
 ^^^
-```{image} ../images/OpenReproLab.png
+```{image} ../images/OpenReproLab.jpg
 :alt:  openreprolab
 :class: bg-primary mb-1
 :width: 200px
