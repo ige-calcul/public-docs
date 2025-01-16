@@ -142,6 +142,11 @@ LMDZ
 An atmospheric general circulation model 
 :::
 
+:::{grid-item-card} 
+:link: ../docs/nextsim
+:link-type: doc
+:class-header: bg-light
+
 neXtSIM
 ^^^
 ```{image} ../images/BBM.png
