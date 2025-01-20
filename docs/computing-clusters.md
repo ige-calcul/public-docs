@@ -26,6 +26,9 @@ The {ref}`following documentation<igecal1>` will guide you through the different
 
   As for GPU ressources and IA computing, there is [another cluster named bigfoot](https://gricad-doc.univ-grenoble-alpes.fr/hpc/joblaunch/job_gpu/).
 
+  We also have @IGE,  {ref}`straighforward documentation<bigfoot>`, to start computing  on GPUs rapidly.
+
+
 
 
 2. CINES
