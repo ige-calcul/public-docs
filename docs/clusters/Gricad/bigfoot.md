@@ -47,12 +47,12 @@ Enter the agalan password
   
 and you should be good for future sessions.  
 
-# Submit a job
+## Submit a job
 
 You should use OAR to  submit your job
 
 
-# Make a reservation to avoid waiting in the queue 
+## Make a reservation to avoid waiting in the queue 
 
 In this example the reservation is made for the Grace Hopper Gh200 (only one is available)
 
@@ -82,7 +82,7 @@ Job id    S User     Duration   System message
 2870075   R chekkim     0:07:45 R=72,W=0:59:53,J=R,P=sno-elmerice,T=container=testres|gh
 ```
 
-# Use the reservation 
+## Use the reservation 
 
 Now connect directly to the node and start using the ressources
 
