@@ -8,7 +8,7 @@ In order to connect , you should refer to the dahu page to create the ssh keys ,
 
 **$HOME/.ssh/config** : 
   
-  ```
+```{bash}
 Host bigfoot 
 ProxyCommand ssh -qX login_gricad@trinity.u-ga.fr nc bigfoot.u-ga.fr 22  
 User login_gricad  
@@ -25,14 +25,14 @@ Next, you need to set the correct rights:
 *keep read/write rights only for the user and the private key: id_rsa*
   
 Then, copy the ssh keys  
- ```
+```{bash}
 ssh-copy-id login_gricad@trinity.u-ga.fr 
-  ```
+```
  
 Enter the agalan passwod  
 
 then  
- ```
+```{bash}
 ssh-copy-id bigfoot
 ```
   
@@ -44,8 +44,6 @@ and you should be good for future sessions.
 
 You should use OAR to  submit your job
 
-
-# TIPS: 
 
 # Make a reservation to avoid waiting in the queue 
 
@@ -63,9 +61,10 @@ Reservation valid --> OK
 ```
 
 If you need to reserve more gpus at once, try A100 ou V100 models and share between users
+
+```{bash}
 chekkim@bigfoot:~$ oarsub -r '2025-01-26 08:00:00' -t container=testres -l /nodes=1/gpu=2,walltime=1:00:00  --project sno-elmerice -p "gpumodel='A100' or gpumodel='V100'"
-
-
+```
 
 Now check the status of the reservation , if it is running then ok
 
@@ -76,8 +75,8 @@ Job id    S User     Duration   System message
 2870075   R chekkim     0:07:45 R=72,W=0:59:53,J=R,P=sno-elmerice,T=container=testres|gh
 ```
 
-
 # Use the reservation 
+
 Now connect directly to the node and start using the ressources
 
 ```{bash}
