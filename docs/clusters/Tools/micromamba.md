@@ -40,7 +40,7 @@ micromamba activate myenv
  On some clusters (for example Dahu), your micromamba process will likely be killed by the system when you try to install environments or packages, because it uses too much memory. In this case, log in to a computation node to perform such tasks.
 ```
 
-**Example:** Create R environment and install R packages
+**Example 1:** Create R environment and install R packages
 
 ```bash
 # Create an environment with python=3.10
@@ -53,3 +53,14 @@ micromamba activate Renv
 micromamba install r r-base r-essentials -c conda-forge
 micromamba install r-ncdf4 -c conda-forge
 ```
+
+**Example 2:** Create a ferret environment 
+
+```bash
+# Create an environment with python=3.8 (needed for Gricad clusters to get the display)
+micromamba create -n pyferret python=3.8  -c conda-forge pyferret ferret_datasets --yes
+
+# Activate the environment
+micromamba activate pyferret
+```
+
