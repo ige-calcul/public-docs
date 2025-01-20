@@ -1,8 +1,53 @@
+(bigfoot)=
+
+
 # Bigfoot
 
 
+In order to connect , you should refer to the dahu page to create the ssh keys , the connection is the same, here are the differences
 
-# Make a reservation 
+**$HOME/.ssh/config** : 
+  
+  ```
+Host bigfoot 
+ProxyCommand ssh -qX login_gricad@trinity.u-ga.fr nc bigfoot.u-ga.fr 22  
+User login_gricad  
+GatewayPorts yes
+``` 
+
+*replace login_gricad with yours*
+  
+Next, you need to set the correct rights:  
+  
+**chmod ugo-rwx .ssh/config**  
+**chmod u+rw .ssh/config**  
+  
+*keep read/write rights only for the user and the private key: id_rsa*
+  
+Then, copy the ssh keys  
+ ```
+ssh-copy-id login_gricad@trinity.u-ga.fr 
+  ```
+ 
+Enter the agalan passwod  
+
+then  
+ ```
+ssh-copy-id bigfoot
+```
+  
+Enter the agalan password  
+  
+and you should be good for future sessions.  
+
+# Submit a job
+
+You should use OAR to  submit your job
+
+
+# TIPS: 
+
+# Make a reservation to avoid waiting in the queue 
 
 In this example the reservation is made for the Grace Hopper Gh200 (only one is available)
 
