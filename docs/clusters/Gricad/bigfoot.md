@@ -3,26 +3,33 @@
 
 # Bigfoot
 
+In order to connect , you should refer to the dahu page to create the ssh keys , the connection is the same, here are the differences:
 
-In order to connect , you should refer to the dahu page to create the ssh keys , the connection is the same, here are the differences
-
-**$HOME/.ssh/config** : 
+ In the file **$HOME/.ssh/config** : 
   
 ```{bash}
 Host bigfoot 
 ProxyCommand ssh -qX login_gricad@trinity.u-ga.fr nc bigfoot.u-ga.fr 22  
 User login_gricad  
 GatewayPorts yes
-``` 
+```
 
+```{warning}
 *replace login_gricad with yours*
+```
   
 Next, you need to set the correct rights:  
-  
-**chmod ugo-rwx .ssh/config**  
-**chmod u+rw .ssh/config**  
-  
-*keep read/write rights only for the user and the private key: id_rsa*
+
+ ```{bash} 
+chmod ugo-rwx .ssh/config 
+chmod u+rw .ssh/config
+ ```
+
+
+```{warning}
+keep read/write rights only for the user and the private key: id_rsa
+```
+
   
 Then, copy the ssh keys  
 ```{bash}
