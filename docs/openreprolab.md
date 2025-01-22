@@ -60,8 +60,8 @@ Here are some of the features expected in this first round. Everything underneat
 ##  List of M2 Students
 
 |   Name       |  Supervisor(s)     |  Team(s)           |  Building          |    Period    | What                                   |
-| -------------|:-----------------:|:----------------:|:------------------:|:------------:|:--------------------------------------:|
-|              | Ruth & Jennie     |                  |                 |              |                                       |
+| -------------|-----------------:|:----------------:|:------------------:|:------------:|:--------------------------------------:|
+|      Shahab SHAHLAEI       | Ruth & Jennie     |         CHAINTI         |       OSUG B          |    March-August          |                                       |
 |              | Gael & Cyril      |                  |                 |              |                                       |
 |              | Charles           |                  |                 |              |                                       |
 |              | Helene            |                  |                 |              |                                       |
@@ -71,5 +71,5 @@ Here are some of the features expected in this first round. Everything underneat
 
 |   Name       |      Building             |
 | -------------|:-------------------------:|
-|       XXX       |          YYY              | 
+|       Jennie Thomas       |          OSUG/MCP              | 
 
