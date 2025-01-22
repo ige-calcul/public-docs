@@ -66,7 +66,7 @@ Here are some of the features expected in this first round. Everything underneat
 | Glenn   | Charles         |  C2H             |  Glacio         |  February-July     |  Observing and modelling meltwater percolation in polar firn              |
 |              | Helene            |                  |                 |              |                                       |
 |              | Amaury            |                  |                 |              |                                       |
-| | Alban & Jordi | | | | |
+| Mathieu | Alban & Jordi | CryoDyn | OSUG-B + MCP | April-September (tentantive) | Physics-informed machine learning inversions of glacier ice flow dynamics |
 
 ##  List of people for Support
 
@@ -74,4 +74,6 @@ Here are some of the features expected in this first round. Everything underneat
 |---------------------------|:------------------------------:|
 |       Jennie       |          OSUG/MCP              |
 |       Ian           |          OSUG-B                |
+|       Alban           |          OSUG-B                |
+|       Jordi           |          MCP                |
 
