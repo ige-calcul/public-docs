@@ -69,7 +69,8 @@ Here are some of the features expected in this first round. Everything underneat
 
 ##  List of people for Support
 
-|   Name       |      Building             |
-| -------------|:-------------------------:|
-|       Jennie Thomas       |          OSUG/MCP              | 
+|   Name                    |      Building                  |
+|---------------------------|:------------------------------:|
+|       Jennie Thomas       |          OSUG/MCP              |
+|       Ian Hough           |          OSUG-B                |
 
