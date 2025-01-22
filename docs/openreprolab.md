@@ -63,7 +63,7 @@ Here are some of the features expected in this first round. Everything underneat
 | -------------|-----------------:|:----------------:|:------------------:|:------------:|:--------------------------------------:|
 |      Shahab SHAHLAEI       | Ruth & Jennie     |         CHAINTI         |       OSUG B          |    March-August          |   Refining Arctic Aerosol-Cloud-Radiation Feedback Predictions through CMIP6 Model Insights : A Focus on Sea-Spray Aerosol Emissions                                    |
 |    MArine Bescond          | Gael & Cyril      |      CryoDyn            |                 |     March-July         |    Analysis of the ISMIP6 Antarctic ensemble                                   |
-|              | Charles           |                  |                 |              |                                       |
+| Glenn Pitiot   | Charles         |  C2H             |  Glacio         |  February-July     |  Observing and modelling meltwater percolation in polar firn              |
 |              | Helene            |                  |                 |              |                                       |
 |              | Amaury            |                  |                 |              |                                       |
 
