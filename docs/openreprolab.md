@@ -57,7 +57,7 @@ Here are some of the features expected in this first round. Everything underneat
 - Persistent workdir and git workflow  
 - Option to switch to GRICAD (more ressources) possible during the course of the internship
 
-##  List of Students
+##  List of M2 Students
 
 |   Name       |  Supervisor(s)     |  Team(s)           |  Building          |    Period    | What                                   |
 | -------------|:-----------------:|:----------------:|:------------------:|:------------:|:--------------------------------------:|
@@ -67,6 +67,9 @@ Here are some of the features expected in this first round. Everything underneat
 |              | Helene            |                  |                 |              |                                       |
 |              | Amaury            |                  |                 |              |                                       |
 
+##  List of people for Support
 
-
+|   Name       |      Building             |
+| -------------|:-------------------------:|
+|              |                           | 
 
