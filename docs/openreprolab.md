@@ -61,7 +61,7 @@ Here are some of the features expected in this first round. Everything underneat
 
 |   Name       |  Supervisor(s)     |  Team(s)           |  Building          |    Period    | What                                   |
 | -------------|-----------------:|:----------------:|:------------------:|:------------:|:--------------------------------------:|
-|      Shahab SHAHLAEI       | Ruth & Jennie     |         CHAINTI         |       OSUG B          |    March-August          |                                       |
+|      Shahab SHAHLAEI       | Ruth & Jennie     |         CHAINTI         |       OSUG B          |    March-August          |   Refining Arctic Aerosol-Cloud-Radiation Feedback Predictions through CMIP6 Model Insights : A Focus on Sea-Spray Aerosol Emissions                                    |
 |              | Gael & Cyril      |                  |                 |              |                                       |
 |              | Charles           |                  |                 |              |                                       |
 |              | Helene            |                  |                 |              |                                       |
