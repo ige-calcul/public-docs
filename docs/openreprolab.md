@@ -57,17 +57,6 @@ Here are some of the features expected in this first round. Everything underneat
 - Persistent workdir and git workflow  
 - Option to switch to GRICAD (more ressources) possible during the course of the internship
 
-##  List of M2 Students
-
-|   Name       |  Supervisor(s)     |  Team(s)           |  Building          |    Period    | What                                   |
-| -------------|-----------------:|:----------------:|:------------------:|:------------:|:--------------------------------------:|
-|      Shahab       | Ruth & Jennie     |         CHAINTI         |       OSUG B          |    March-August          |   Refining Arctic Aerosol-Cloud-Radiation Feedback Predictions through CMIP6 Model Insights : A Focus on Sea-Spray Aerosol Emissions                                    |
-|    Marine          | Gael & Cyril      |      CryoDyn            |                 |     March-July         |    Analysis of the ISMIP6 Antarctic ensemble                                   |
-| Glenn   | Charles         |  C2H             |  Glacio         |  February-July     |  Observing and modelling meltwater percolation in polar firn              |
-|              | Helene            | CHIANTI                 | OSUG-B                | March             | GEOS-Chem model, Hg cycle                                      |
-| Luc          | Amaury            | CryoDyn          | Glacio           | March-July      | Automated processing of film-based satellite images    |
-| Mathieu | Alban & Jordi | CryoDyn | OSUG-B + MCP | April-September (tentantive) | Physics-informed machine learning inversions of glacier ice flow dynamics |
-
 ##  List of people for Support
 
 |   Name                    |      Building                  |
