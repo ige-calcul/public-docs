@@ -60,10 +60,11 @@ Here are some of the features expected in this first round. Everything underneat
 ##  List of people for Support
 
 |   Name                    |      Building                  |
-|---------------------------|:------------------------------:|
+|---------------------------|------------------------------|
 |       Jennie       |          OSUG/MCP              |
 |       Ian           |          OSUG-B                |
 |       Alban           |          OSUG-B                |
 |       Jordi           |          MCP                |
 |       Amaury          |         Glacio              |
+| Mykael | OSUG/MCP |
 
