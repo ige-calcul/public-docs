@@ -2,7 +2,7 @@
 
 
 Make sure you are able to connect to the clusters ige-calcul1/2//3/4 without any passwords
-Please refers to the doc ![Connect to the clusters](https://ige-calcul.github.io/public-docs/docs/clusters/Ige/ige-calcul1.html)
+Please refers to the doc [Connect to the clusters](../Ige/ige-calcul1.md)
 
 Il you are using the command 
 
