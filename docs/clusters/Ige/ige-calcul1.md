@@ -110,6 +110,11 @@ There are 2 working directories available on the clusters
 /workdir2  (available on all clusters: SUMMER STORAGE)
 ```
 
+##  Running jupyter notebooks on ige-cluster1/2/3/4
+
+ Please refer to this doc [How to run jupyter notebooks on Ige clusters](../../clusters/Tools/jupyterhub.md)
+
+
 ## Job submission example
 
 Consider you have a script in one of the programming languages such as Python, MatLab, C, Fortran , or Java. How would you execute it using Slurm?
