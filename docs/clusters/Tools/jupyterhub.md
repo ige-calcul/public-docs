@@ -72,7 +72,9 @@ for the first usage you will be asked to give the license server
 
 # Add you own environment
 
-You can add you own environment created with micromamba for example
+![](./images/kernel_env_install.PNG)
+
+You can add you own kernel/ environment created with micromamba for example
 
 ## R exammple
 
@@ -90,3 +92,18 @@ Open R terminal
  install.packages('IRkernel')
  IRkernel::installspec()
 ```
+## Pytorch example
+
+1. Create pytorch env
+```
+   micromamba create -n EnvPytorch python=3.10 -c conda-forge
+   micromamba activate EnvPytorch
+   micromamba install pytorch torchvision torchaudio  -c pytorch -c nvidia -c conda-forge
+   micromamba install ipykernel  -c conda-forge
+```
+2. Install the pytorch environement
+
+```
+python -m ipykernel install --name EnvPytorch --prefix=/home/chekkim/.local
+```
+![](./images/check_torch.PNG)
