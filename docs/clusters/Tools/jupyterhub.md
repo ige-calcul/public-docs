@@ -1,6 +1,5 @@
 # Run a jupyter notebook on the cluster
 
-
 Make sure you are able to connect to the clusters ige-calcul1/2//3/4 without any passwords
 Please refers to the doc [Connect to the clusters](../Ige/ige-calcul1.md)
 
@@ -71,3 +70,23 @@ for the first usage you will be asked to give the license server
 ```
 ![](./images/matlab.PNG)
 
+# Add you own environment
+
+You can add you own environment created with micromamba for example
+
+## R exammple
+
+1. Create your R environment
+```
+  micromamba create -n Renv python=3.10 -c conda-forge
+  micromamba activate Renv
+  micromamba install r r-base r-essentials -c conda-forge
+```
+2. Add the kernel to your jupyterlab
+
+Open R terminal
+
+```
+ install.packages('IRkernel')
+ IRkernel::installspec()
+```
