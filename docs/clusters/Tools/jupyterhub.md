@@ -3,6 +3,9 @@
 Make sure you are able to connect to the clusters ige-calcul1/2//3/4 without any passwords
 Please refers to the doc [Connect to the clusters](../Ige/ige-calcul1.md)
 
+
+## Connect to the server
+
 Il you are using the command 
 
 ```
@@ -74,6 +77,22 @@ for the first usage you will be asked to give the license server
 
 ```
 ![](./images/matlab.PNG)
+
+## Exit the server
+
+In order to stop the kernel et kill the allocated job go to **Hub Control Panel**
+
+![](./images/exit_jupyterlab1.PNG)
+
+![](./images/exit_jupyterlab2.PNG)
+
+
+## Restart the server
+
+You can restart the server , by clicking on the button **Start My Server**
+It will ask you again for new ressources adn connect you to the server
+
+![](./images/restart_jupyterhub.PNG)
 
 # Add you own environment
 
