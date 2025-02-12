@@ -1,4 +1,4 @@
-# Run a jupyter notebook on the cluster
+# Run a jupyter notebook on the clusters
 
 Make sure you are able to connect to the clusters ige-calcul1/2//3/4 without any passwords
 Please refers to the doc [Connect to the clusters](../Ige/ige-calcul1.md)
@@ -9,10 +9,15 @@ Il you are using the command
 ssh  calcul1
 ```
 
-to connect to the cluster , then create the ssh tunnel using any port , here **8300**
+to connect to the cluster ige-calcul1 , then create the ssh tunnel using any port , here **8300**
 
 ```
 ssh -fNL 8300:localhost:8000 calcul1
+```
+
+```{Note}
+The jupyterhub is also available on the other clusters, i.e ige-calcul2 ige-calcul3 ige-calcul4
+Make sure to have a look to the features of each cluster as you can access to large memory (up to 700G) and Gpus
 ```
 
 Once this done, open a local browser , with this url
