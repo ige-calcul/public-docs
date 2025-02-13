@@ -209,6 +209,26 @@ chekkim@ige-calcul1:~$ squeue
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
                 51    calcul helloMPI  chekkim  R       0:02      1 ige-calcul1
 ```
+
+
+```{caution}
+
+If your job is pending, you need to wait for the ressources or adapt you submission file
+You can get the available memory/cpus on the cluster with the following command
+
+chekkim@ige-calcul3:~$ sinfo  -o "%20N  %15c  %15C  %10m  %20e   %30G " |  awk -F "/"  '{print $1, $2, $4}'
+NODELIST              CPUS             **CPUS(A I T)**    MEMORY      FREE_MEM               GRES
+ige-calcul3           112               4 108 112         740000      525031                 (null)
+
+**CPUS(A I T):**
+A:   Allocated (Used) 
+I:   Idle (free)
+T:   Total (Total)
+
+```
+
+
+
 Once the job is finished you can get direct statistics using the seff command (for more statistics , refer to the accounting section below)
 Here is the outputs for another job , more memory consuming (we asked in this job for 20000 MB ~~ 19.53 GB)
 
