@@ -3,9 +3,9 @@
 # IGE clusters
 
 
-IGE computing servers are ige-calcul1, ige-calcul2, ige-calcul3, ige-calcul4.
+IGE computing servers are  ige-calcul[1-4]: ige-calcul1, ige-calcul2, ige-calcul3, ige-calcul4.
 
-You can replace calcul1 by calcul2, calcul3 or calcul4 in the following documentation according to your use.
+You can replace calcul1 by calcul2, calcul3 or calcul4 in the following documentation depending on the cluster your choose
 
 ### Features of the clusters
 
@@ -63,7 +63,7 @@ ice3
 chianti
 ```
 
-Please send an email to `mondher.chekki@uXXXX-gYYYY-aZZZZ.fr OR ige-support@uXXXX-gYYYY-aZZZZ.fr, asking for storage under /workdir and a slurm account by providing the name of your team and the space you need (1G,10G,100G,1TB).
+Please send an email to `mondher.chekki@uXXXX-gYYYY-aZZZZ.fr asking for storage under /workdir and a slurm account by providing the name of your team and the space you need (1G,10G,100G,1TB).
 
 
 ## Available softwares
@@ -110,7 +110,7 @@ There are 2 working directories available on the clusters
 /workdir2  (available on all clusters: SUMMER STORAGE)
 ```
 
-##  Running jupyter notebooks on ige-cluster1/2/3/4
+##  Running jupyter notebooks on ige-calcul[1-4]
 
  Please refer to this doc [How to run jupyter notebooks on Ige clusters](../../clusters/Tools/jupyterhub.md)
 
