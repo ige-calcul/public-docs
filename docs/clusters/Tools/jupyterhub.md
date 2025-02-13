@@ -72,10 +72,14 @@ Check the gpu usage (extension on the left)
 Use matlab
 
 ```{Note}
-for the first usage you will be asked to give the license server 
+For the first usage you will be asked to give the license server (Network License Manager)
 27000@matlab.ige-grenoble.fr
-
 ```
+
+![](./images/matlab_license.PNG)
+
+Once it is done, you will be able to run matlab and the configuration will be saved for future usages
+
 ![](./images/matlab.PNG)
 
 ## Exit the server
