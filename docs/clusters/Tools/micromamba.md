@@ -11,9 +11,13 @@ source ~/.bashrc
 ```
 
 ```{caution}
+
  WORKDIR should be a large storage, do not use the HOME directory for installation
- On gricad , it could be /bettik/PROJECTS/PROJECT_NAME/$USER
- on ige-clusters, it could be /workdir/TEAM_NAME/$USER or /workdir2/TEAM_NAME/$USER
+
+ On gricad , it could be /bettik/PROJECTS/PROJECT_NAME/USER_NAME
+
+ On ige-clusters, it could be /workdir/TEAM_NAME/USER_NAME or /workdir2/TEAM_NAME/USER_NAME
+
 ```
 
 2. Create an environment with python=3.10
