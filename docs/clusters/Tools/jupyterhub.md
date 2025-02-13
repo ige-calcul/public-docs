@@ -38,6 +38,11 @@ Then you get the different options to choose the needed ressources
 2. CPUs/ GPUs
 3. Time , etc...
 
+```{caution}
+If your job is taking time to get connected, you are problaly waiting in the queue
+You can connect using ssh , and check the ressources with **squeue -u $USER**
+```
+
 ![](./images/jupyterhub2.PNG)
 
 Here is an example to choose the number of gpus if there are any
