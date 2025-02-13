@@ -214,18 +214,22 @@ chekkim@ige-calcul1:~$ squeue
 ```{caution}
 
 If your job is pending, you need to wait for the ressources or adapt you submission file
-You can get the available memory/cpus on the cluster with the following command
-
-chekkim@ige-calcul3:~$ sinfo  -o "%20N  %15c  %15C  %10m  %20e   %30G " |  awk -F "/"  '{print $1, $2, $4}'
-NODELIST              CPUS             **CPUS(A I T)**    MEMORY      FREE_MEM               GRES
-ige-calcul3           112               4 108 112         740000      525031                 (null)
-
-**CPUS(A I T):**
-A:   Allocated (Used) 
-I:   Idle (free)
-T:   Total (Total)
+You can get the available memory/cpus on the cluster with the squeue command
 
 ```
+
+```
+chekkim@ige-calcul3:~$ sinfo  -o "%20N  %15c  %15C  %10m  %20e   %30G " |  awk -F "/"  '{print $1, $2, $4}'
+```
+
+| NODELIST   |           CPUS    |      **CPUS(A I T)**  |  MEMORY   |   FREE_MEM     |          GRES|
+|------------|:-----------------:|:---------------------:|:---------:|:--------------:|:-------------:|
+|ige-calcul3 |           112     |        4 108 112      |  740000   |   525031       |         (null)|
+
+**CPUS(A I T):**:
+
+A:  Allocated (Used)   I:   Idle (free)   T:   Total (Total)
+
 
 
 
