@@ -65,7 +65,7 @@ Check the cpu usage (extension on the left)
 
 ![](./images/cpu_usage.PNG)
 
-Check the gpu (extension on the left)
+Check the gpu usage (extension on the left)
 
 ![](./images/gpu_usage.PNG)
 
@@ -131,3 +131,58 @@ Open R terminal
 python -m ipykernel install --name EnvPytorch --prefix=/home/chekkim/.local
 ```
 ![](./images/check_torch.PNG)
+
+
+# Run Vscode on the clusters
+
+```{Note}
+If you don't need to use python and only vscode, you can select **Terminal** for the User Interface, instead of jupyterlab or jupyter
+This will open only a terminal on the server
+```
+Once you are connected to jupyterhub 
+
+Open a terminal from the jupyter launcher  and get the informations to connect to the server in the output of your job
+
+```
+head -10  $HOME/jupyterhub_slurmspawner_$SLURM_JOBID.log
+```
+
+Example for my JOBID=8:
+
+```
+chekkim@ige-calcul2:~$ head -10  jupyterhub_slurmspawner_8.log
+********************************************************************
+Starting code-server in Slurm
+Environment information:
+Date: mer. 12 févr. 2025 14:53:13 CET
+Allocated node: ige-calcul2
+Node IP:
+Path: /home/chekkim
+Password to access VSCode: user_jobid
+Listening on: 46479
+********************************************************************
+```
+
+Then create an ssh tunnel with the given port
+
+```
+ssh -fNL 46479:localhost:46479 calcul1/2/3/4
+```
+
+and open your local  browser 
+
+```
+http://localhost:46479
+```
+
+Entre the password:
+
+![](./images/codeserver1.PNG)
+
+Then you can open any folder on the remote server
+
+![](./images/codeserver2.PNG)
+
+and that's it , now you can modify your code and run vscode 
+
+![](./images/codeserver3.PNG)
