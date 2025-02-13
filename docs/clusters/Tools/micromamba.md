@@ -10,8 +10,10 @@ curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/mi
 source ~/.bashrc
 ```
 
-```{warning}
- WORKDIR is a large filesystem, do not use the HOME directory for installation
+```{caution}
+ WORKDIR should be a large storage, do not use the HOME directory for installation
+ On gricad , it could be /bettik/PROJECTS/PROJECT_NAME/$USER
+ on ige-clusters, it could be /workdir/TEAM_NAME/$USER or /workdir2/TEAM_NAME/$USER
 ```
 
 2. Create an environment with python=3.10
@@ -33,6 +35,9 @@ micromamba install package_name -c conda-forge
 
 ```bash
 . $WORKDIR/micromamba/etc/profile.d/micromamba.sh
+OR
+. $WORKDIR/micromamba/etc/profile.d/mamba.sh
+and then 
 micromamba activate myenv
 ```
 
