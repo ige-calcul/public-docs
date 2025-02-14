@@ -210,6 +210,7 @@ chekkim@ige-calcul1:~$ squeue
                 51    calcul helloMPI  chekkim  R       0:02      1 ige-calcul1
 ```
 
+## How to check the ressources
 
 ```{caution}
 
@@ -231,7 +232,19 @@ chekkim@ige-calcul3:~$ sinfo  -o "%20N  %15c  %15C  %10m  %20e   %30G " |  awk -
 A:  Allocated (Used)   I:   Idle (free)   T:   Total (Total)
 
 
+If your job is slow, you should check the CPU_LOAD and make sure it is equivalent to the number of Allocated CPUS.
+For this example , the CPU_LOAD is 101 and the allocated is 0, which means that there are some programs running on the background and they are not using SLURM and this is not **NORMAL** 
 
+```
+chekkim@ige-calcul3:~$ sinfo  -o "%20N   %10O| %10c  %15C  %10m  %20e   %30G " |  awk -F "/"  '{print $1, $2, $4}'
+```
+
+| NODELIST   |     CPU_LOAD  |      CPUS    |      **CPUS(A I T)**  |  MEMORY   |   FREE_MEM     |          GRES|
+|------------|:-------------:|:------------:|:---------------------:|:---------:|:--------------:|:-------------:|
+|ige-calcul3 |       101.33  |      112     |          0 112 112    |  740000   |     539958     |         (null)|
+
+
+## Code efficiency on the cluster
 
 Once the job is finished you can get direct statistics using the seff command (for more statistics , refer to the accounting section below)
 Here is the outputs for another job , more memory consuming (we asked in this job for 20000 MB ~~ 19.53 GB)
@@ -257,6 +270,8 @@ srun: error: ige-calcul1: task 0: Out Of Memory
 srun: launch/slurm: _step_signal: Terminating StepId=501757.0
 slurmstepd-ige-calcul1: error: Detected 1 oom-kill event(s) in StepId=501757.0. Some of your processes may have been killed by the cgroup out-of-memory handler.
 ```
+
+## Use the interactive mode
 
 3. Interactive mode
 
