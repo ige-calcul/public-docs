@@ -110,9 +110,17 @@ There are 2 working directories available on the clusters
 /workdir2  (available on all clusters: SUMMER STORAGE)
 ```
 
-##  Running jupyter notebooks on ige-calcul[1-4]
+##  Running jupyter notebooks on the clusters
 
  Please refer to this doc [How to run jupyter notebooks on Ige clusters](../../clusters/Tools/jupyterhub.md)
+
+## Running python code on the clusters 
+
+We recommend that you use [micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) instead of conda/miniconda.
+
+Micromamba is just faster then conda !
+
+Check [here](../../clusters/Tools/micromamba.md) how to set up your python environement with micromamba.
 
 
 ## Job submission example
@@ -198,7 +206,9 @@ srun  --mpi=pmix -N 1  -n  4 ./hello_mpi
 
 `job.sh` request 4 cores for 1 hour, along with 4000 MB of RAM, in the default queue.
 
+```{caution}
 The account is important in order to get statisticis about the number of CPU hours consumed within the account: _make sure to be part of an acccount before submitting any jobs_
+```
 
 When started, the job would run the hello_mpi program using 4 cores in parallel. To run the `job.sh` script use `sbatch` command and `squeue` to see the state of the job:
 
@@ -209,8 +219,116 @@ chekkim@ige-calcul1:~$ squeue
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
                 51    calcul helloMPI  chekkim  R       0:02      1 ige-calcul1
 ```
+##  Gpu support
 
-## How to check the ressources
+To use gpus in a job , add the following in your submission file
+
+```bash
+#SBATCH --gres=gpu:1
+```
+or for 2 gpus 
+
+```bash
+#SBATCH --gres=gpu:1
+```
+
+
+## Use the interactive mode
+
+
+For interactive mode you should use the srun or salloc commands.
+
+The most common way is to use the **srun** followed by **--pty bash -i**. Then you can run any program you need.
+
+```bash
+srun --nodes=1  --ntasks=4  --mem=40000 --time=01:00:00 --pty bash -i
+```
+
+to use gpu add the  --gres=gpu command
+
+```bash
+srun --nodes=1 --gres=gpu:1 --ntasks=4  --mem=40000 --time=01:00:00 --pty bash -i
+```
+or to use 2 gpus
+
+```bash
+srun --nodes=1 --gres=gpu:2 --ntasks=4  --mem=40000 --time=01:00:00 --pty bash -i
+```
+
+If you use  **srun** followed by **your program** (without running the previous command) it will allocate the ressource, run the program and exit.
+
+An equivalent to the `job.sh` will be :
+
+  - Run mpi hello example with 4 cores
+
+```bash
+srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi
+```
+
+==> This will run and exit once it is done
+
+or
+
+```bash
+srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 --pty bash -i
+srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi
+```
+
+==> This will keep the ressources even when the program is done
+
+
+  - Run Qgis with 8 threads (graphic interface)
+
+```bash
+srun --mpi=pmix -n 1 -c 8 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 qgis
+```
+
+  - Run Jupiter notebook with 4 threads
+
+```bash
+srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 jupyter notebook
+```
+
+  - Run matlab  with 4 threads
+
+```bash
+module load matlab/R2022b
+srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 matlab  -nodisplay -nosplash -nodesktop  -r "MATLAB_command"
+# or
+srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 matlab  -nodisplay -nosplash -nodesktop  -batch "MATLAB_command"
+# or
+srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 matlab  -nodisplay -nosplash -nodesktop < test.m
+```
+
+  - Example of job_matlab.sh :
+
+```bash
+#!/bin/bash
+#SBATCH -J matlab
+
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=4
+#SBATCH --account=cryodyn
+
+#SBATCH --mem=4000
+
+#SBATCH --time=01:00:00
+#SBATCH --output matlab.%j.output
+#SBATCH --error  matlab.%j.error
+
+
+cd /workdir/$USER/
+
+## Run on Matlab
+module load matlab/R2022b
+srun --mpi=pmix -n 1 -c 4 -N 1  matlab -nodisplay -nosplash -nodesktop  -r "MATLAB_command"
+# or
+srun --mpi=pmix -n 1 -c 4 -N 1  matlab -nodisplay -nosplash -nodesktop  -batch "MATLAB_command"
+# or
+srun --mpi=pmix -n 1 -c 4 -N 1  matlab  -nodisplay -nosplash -nodesktop < test.m
+```
+
+## How to check the  available ressources
 
 ```{caution}
 
@@ -271,97 +389,10 @@ srun: launch/slurm: _step_signal: Terminating StepId=501757.0
 slurmstepd-ige-calcul1: error: Detected 1 oom-kill event(s) in StepId=501757.0. Some of your processes may have been killed by the cgroup out-of-memory handler.
 ```
 
-## Use the interactive mode
 
-3. Interactive mode
+## Job Accounting
 
-For interactive mode you should use the srun/salloc commands.
-
-Either you get the ressources using **srun** followed by **--pty bash -i**. Then you can run any program you need.
-
-Or you use **srun** followed by **your program** and then it will allocate the ressource, run the program and exit.
-
-An equivalent to the `job.sh` will be :
-
-  - Run mpi hello example with 4 cores
-
-```bash
-srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi
-```
-
-==> This will run and exit once it is done
-
-or
-
-```bash
-srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 --pty bash -i
-srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi
-```
-
-==> keep the ressources even when the program is done
-
-  - Run Qgis with 8 threads (graphic interface)
-
-```bash
-srun --mpi=pmix -n 1 -c 8 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 qgis
-```
-
-  - Run Jupiter notebook with 4 threads
-
-```bash
-srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 jupyter notebook
-```
-
-  - Run matlab  with 4 threads
-
-```bash
-module load matlab/R2022b
-srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 matlab  -nodisplay -nosplash -nodesktop  -r "MATLAB_command"
-# or
-srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 matlab  -nodisplay -nosplash -nodesktop  -batch "MATLAB_command"
-# or
-srun --mpi=pmix -n 1 -c 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 matlab  -nodisplay -nosplash -nodesktop < test.m
-```
-
-  - Example of job_matlab.sh :
-
-```bash
-#!/bin/bash
-#SBATCH -J matlab
-
-#SBATCH --nodes=1
-#SBATCH --cpus-per-task=4
-#SBATCH --account=cryodyn
-
-#SBATCH --mem=4000
-
-#SBATCH --time=01:00:00
-#SBATCH --output matlab.%j.output
-#SBATCH --error  matlab.%j.error
-
-
-cd /workdir/$USER/
-
-## Run on Matlab
-module load matlab/R2022b
-srun --mpi=pmix -n 1 -c 4 -N 1  matlab -nodisplay -nosplash -nodesktop  -r "MATLAB_command"
-# or
-srun --mpi=pmix -n 1 -c 4 -N 1  matlab -nodisplay -nosplash -nodesktop  -batch "MATLAB_command"
-# or
-srun --mpi=pmix -n 1 -c 4 -N 1  matlab  -nodisplay -nosplash -nodesktop < test.m
-```
-
-4. For Python users
-
-We recommend that you use [micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) instead of conda/miniconda.
-
-Micromamba is just faster then conda !
-
-Check [here](../../clusters/Tools/micromamba.md) how to set up your python environement with micromamba.
-
-5. Job Accounting
-
-Interestingly, you can get near-realtime information about your running program (memory consumption, etc.) with the sstat command:
+You can get near-realtime information about your running program (memory consumption, etc.) with the sstat command:
 
 ```bash
 sstat -j JOBID
@@ -380,3 +411,5 @@ chekkim@ige-calcul1:~$ sacct  -j 51  --format="Account,JobID,JobName,NodeList,CP
 
 **MaxRSS: Maximum RAM used by the job, you can also get the MAximum RAM used by a given task
 ```
+
+
