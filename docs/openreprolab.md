@@ -51,9 +51,9 @@ Here are some of the features expected in this first round. Everything underneat
   - typical workflow
   - good practices : environment and enrolling the notebook before the push
  
-- Session 3 Documentation (March 27th ?)
+- Session 3 Documentation and conservation (March 27th ?)
   - for data : meta data, readme, conventions, markdown, zenodo
-  - for software : docstring, reathedoc
+  - for software : docstring, reathedoc, software heritage
  
 - Session 4 Advanced software development (April 3th ?)
   - modules, library packaging
