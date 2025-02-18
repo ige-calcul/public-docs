@@ -7,7 +7,7 @@ Here are some of the features expected in this first round. Everything underneat
 
 ### What we can provide
 - a cloud computing interface based on local resources and services
-- a presentation, open to all, about Open Science and Reproducible Research, and how to put them into practice at IGE
+- several presentations, open to all but directed at the selected students, about Open Science and Reproducible Research, and the various tools and methods to put them into practice at IGE
 - support throughout the course: weekly Thursday afternoon slot for discussion and debugging
 - preservation of datasets and codes produced during internships.
 
@@ -33,10 +33,32 @@ Here are some of the features expected in this first round. Everything underneat
  
 ### Timeline
 - January 21-22 : communication to CAPS and e-mail to all-IGE: call for candidates (=supervisors)
-- February 3: selection of candidates
-- February 18: information session on Open Science in general and the implementation of workflows for the internship
-- every Thursday until July 31: open slot for discussion and debugging 1pm-4pm
+- February 18: selection of candidates
+- every Thursday starting March 13 until July 31: training session on a tool or method + open slot for discussion and debugging 1pm-4pm
 - end of July: Repro-Hackathon and election of the most reproducible intership
+
+### Program of the training sessions
+
+- Session 1 Basic tools (March 13th ?)
+  - accessing the computing platform
+  - accessing the storage
+  - use git : create a repo for lab notebook
+  - jupyter notebook
+
+- Session 2 Daily workflow (March 20th ?)
+  - notebook : journal, project, specific software library
+  - the target : a reproducible internship report
+  - typical workflow
+  - good practices : environment and enrolling the notebook before the push
+ 
+- Session 3 Documentation (March 27th ?)
+  - for data : meta data, readme, conventions, markdown, zenodo
+  - for software : docstring, reathedoc
+ 
+- Session 4 Advanced software development (April 3th ?)
+  - modules, library packaging
+  - pip install
+  - environments
 
 ### The rules we set for ourselves
 - about selection of internships
