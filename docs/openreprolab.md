@@ -34,28 +34,28 @@ Here are some of the features expected in this first round. Everything underneat
 ### Timeline
 - January 21-22 : communication to CAPS and e-mail to all-IGE: call for candidates (=supervisors)
 - February 18: selection of candidates
-- every Thursday starting March 13 until July 31: training session on a tool or method + open slot for discussion and debugging 1pm-4pm
+- every Thursday starting March 6 until July 31: training session on a tool or method + open slot for discussion and debugging 1pm-4pm
 - end of July: Repro-Hackathon and election of the most reproducible intership
 
 ### Program of the training sessions
 
-- Session 1 Basic tools (March 13th ?)
+- Session 1 Basic tools (March 6th)
   - accessing the computing platform
   - accessing the storage
   - use git : create a repo for lab notebook
   - jupyter notebook
 
-- Session 2 Daily workflow (March 20th ?)
+- Session 2 Daily workflow (March 13th)
   - notebook : journal, project, specific software library
   - the target : a reproducible internship report
   - typical workflow
   - good practices : environment and enrolling the notebook before the push
  
-- Session 3 Documentation and conservation (March 27th ?)
+- Session 3 Documentation and conservation (March 20th)
   - for data : meta data, readme, conventions, markdown, zenodo
   - for software : docstring, reathedoc, software heritage
  
-- Session 4 Advanced software development (April 3th ?)
+- Session 4 Advanced software development (March 27th)
   - modules, library packaging
   - pip install
   - environments
