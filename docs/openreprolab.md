@@ -15,6 +15,22 @@ Here are some of the features expected in this first round. Everything underneat
 - M2 students with a computationally-oriented subject and intermediate needs in terms of computing and storage resources, ex : data exploration/analysis or light software development.
 - 10 students maximum
 
+The selected internship are the following :
+
+|   Name of supervisor           |     Name of student          | Title of internship |
+|--------------------------------|------------------------------|---------------------|
+|       Ruth Price               |                              | CMIP and observational analysis of natural Arctic aerosol processes |
+|       Charles Amory            |                              | Évolution de la neige en période de fonte : modélisation et observation au Col du Lautaret |
+|       Jordi Bolibar            |                              | Inversions of glacier ice dynamics using physics-informed machine learning |
+| Gael Durand/Cyrille Mosbeux    |                              | ISMIP6 et instabilité des calottes marines |
+|       Didier Voisin            |                              | CO2 and water atmosphere - surface exchanges in a mountain site |
+|       Amaury Dehecq            |                              | Exploiting US spy satellites images to monitor changes in Earth's surface since 1960 |
+|       Thierry Penduff          |                              | Etude probabiliste des vagues de chaleur marines |
+|       Helene Angot             |                              | Evaluation de la capacité d'absorption de mercure de la forêt amazonienne |
+|       Gerhard Krinner          |                              | Distribution spatiale de la neige et de la glace de mer en fonction du niveau de réchauffement global |
+| Didier Voisin/Thierry Pellarin |                              | Intercomparaison de modélisations hydrologiques pour une tête de bassin versant alpine, vers une quantification de la vulnérabilité de la ressource en eau des alpages|
+
+
 ### Benefices expected
 - for students
   - technical support for computing
