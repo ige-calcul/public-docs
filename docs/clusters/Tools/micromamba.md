@@ -73,3 +73,17 @@ micromamba create -n pyferret python=3.8  -c conda-forge pyferret ferret_dataset
 micromamba activate pyferret
 ```
 
+## Clone an environment
+
+Create a yaml file to copy an existing environment:
+
+```bash
+micromamba env export -n myenv > myenv.yaml 
+```
+
+Create an environment from the yaml file:
+
+```bash
+micromamba env create -n myenv-copy  -f  myenv.yaml 
+```
+
