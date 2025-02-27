@@ -89,8 +89,8 @@ The selected internship are the following :
 
 ### Cloud computing interface
 - Deployment of a JupyterHub/Lab associated with GRICAD resources mobilized by the NOVA service
-- For each user: 1 to 4 CPUs and 28 GB RAM guaranteed (expandable according to needs and timing), 50GB individual storage + NFS mounting of a 50 TB SUMMER space for medium-term back-up 
-- Accessible from anywhere via an address such as open-repro-lab.osug.fr and authentication via GitHub/GitLab
+- For each user: 1 to 8 CPUs and up to 32 GB RAM guaranteed (expandable according to needs and timing), 100GB individual storage + NFS mounting of a 50 TB SUMMER (shared with the lab) space for medium-term back-up
+- Accessible from anywhere via an address such as https://openreprolab.ige.osug.fr and authentication via GitHub/GitLab
 - Preloaded Pangeo-type computing environment + customization options 
 - Persistent workdir and git workflow  
 - Option to switch to GRICAD (more ressources) possible during the course of the internship
@@ -106,3 +106,6 @@ The selected internship are the following :
 |       Amaury          |         Glacio              |
 | Mykael | OSUG/MCP/Glacio |
 
+## Useful links
+- JupyterHub Cloud Computing Platform: https://openreprolab.ige.osug.fr
+- OpenReproLab 2025 GitHub Organization and all its repositories: https://github.com/IGE-OpenReproLab2025
