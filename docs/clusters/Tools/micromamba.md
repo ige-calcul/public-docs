@@ -2,7 +2,7 @@
 
 # Micromamba
 
-1. Download  and Install micromamba
+## Download  and Install micromamba
 ```bash
 cd $WORKDIR
 curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
@@ -20,13 +20,14 @@ source ~/.bashrc
 
 ```
 
-2. Create an environment with python=3.10
+
+## Create an environment 
 
 ```bash
 micromamba create -n myenv python=3.10 -c conda-forge
 ```
 
-3. Activate the environment and install a package
+## Activate the environment and install a package
 
 ```bash
 micromamba activate myenv
@@ -86,4 +87,28 @@ Create an environment from the yaml file:
 ```bash
 micromamba env create -n myenv-copy  -f  myenv.yaml 
 ```
+## Install a kernel on a jupyter notebook
+
+
+```{caution}
+ Make sure to install the jupyter notebook in your environnement
+  micromamba activate myenv 
+  micromamba install jupyter -c conda-forge
+```
+Once your environment is created it is easy to make it available on a jupyter notebook. 
+
+Install the ipykernel package
+
+```bash
+micromamba install ipykernel  -c conda-forge
+```
+
+Then make the env available
+
+```bash
+python -m ipykernel install --name myenv --prefix=/home/$USER/.local --display-name "My First  Env"
+```
+
+Restart your jupyter notebook and you will be able to choose your environment among others available environments
+
 
