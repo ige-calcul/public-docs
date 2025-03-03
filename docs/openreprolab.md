@@ -54,27 +54,7 @@ The selected internship are the following :
 - end of July: Repro-Hackathon and election of the most reproducible intership
 
 ### Program of the training sessions
-
-- Session 1 Basic tools (March 6th)
-  - accessing the computing platform
-  - accessing the storage
-  - use git : create a repo for lab notebook
-  - jupyter notebook
-
-- Session 2 Daily workflow (March 13th)
-  - notebook : journal, project, specific software library
-  - the target : a reproducible internship report
-  - typical workflow
-  - good practices : environment and enrolling the notebook before the push
- 
-- Session 3 Documentation and conservation (March 20th)
-  - for data : meta data, readme, conventions, markdown, zenodo
-  - for software : docstring, reathedoc, software heritage
- 
-- Session 4 Advanced software development (March 27th)
-  - modules, library packaging
-  - pip install
-  - environments
+- Details : https://github.com/IGE-OpenReproLab2025/training-sessions-material
 
 ### The rules we set for ourselves
 - about selection of internships
