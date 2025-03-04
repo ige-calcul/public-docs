@@ -89,29 +89,21 @@ micromamba env create -n myenv-copy  -f  myenv.yaml
 ```
 ## Install a kernel on a jupyter notebook
 
-
-```{caution}
-  Make sure to install the jupyter notebook in your environment
-
-  micromamba activate myenv
-
-  micromamba install jupyter -c conda-forge
-```
-
 Once your environment is created it is easy to make it available on a jupyter notebook. 
 
 Install the ipykernel package
 
 ```bash
+micromamba activate myenv
 micromamba install ipykernel  -c conda-forge
 ```
 
 Then make the environment "myenv" available under the name "My First  Env"
 
 ```bash
-python -m ipykernel install --name myenv --prefix=/home/$USER/.local --display-name "My First  Env"
+python -m ipykernel install --name myenv --user --display-name "My First Env"
 ```
 
-Restart your jupyter notebook and you will be able to choose your environment among other available environments
+Restart your jupyter notebook and you will be able to choose your environment  **My First Env** among other available environments
 
 
