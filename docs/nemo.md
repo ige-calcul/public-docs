@@ -26,6 +26,7 @@ Ressources :
 | J. Le Sommer | Researcher        | MEOM             |    MCP             |
 | L. Brodeau   | Research Engineer | MEOM             |    MCP             | 
 | A. Albert    | Research Engineer | MEOM             |    MCP             | 
+| A. Barge     | Research Engineer | MEOM             |    MCP             | 
 | J.M. Brankart| Research Engineer | MEOM             |    MCP             | 
 | P. Brasseur  | Researcher        | MEOM             |    MCP             | 
 
