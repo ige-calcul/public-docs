@@ -74,7 +74,7 @@ Check the gpu usage (extension on the left)
 
 ![](./images/gpu_usage.PNG)
 
-Use matlab
+## Matlab usage
 
 ```{Note}
 For the first usage you will be asked to give the license server (Network License Manager)
@@ -109,7 +109,7 @@ It will ask you again for new ressources adn connect you to the server
 
 You can add you own kernel/ environment created with micromamba for example
 
-## R exammple
+## R example
 
 1. Create your R environment
 ```
@@ -134,15 +134,15 @@ Open R terminal
    micromamba install pytorch torchvision torchaudio  -c pytorch -c nvidia -c conda-forge
    micromamba install ipykernel  -c conda-forge
 ```
-2. Install the pytorch environement
+2. Install the pytorch environment
 
 ```
-python -m ipykernel install --name EnvPytorch --prefix=/home/chekkim/.local
+python -m ipykernel install --name EnvPytorch --user --display-name "Pytorch"
 ```
 ![](./images/check_torch.PNG)
 
 
-# Run Vscode on the clusters
+## Run Vscode on the clusters
 
 ```{Note}
 If you don't need to use python and only vscode, you can select **Terminal** for the User Interface, instead of jupyterlab or jupyter
