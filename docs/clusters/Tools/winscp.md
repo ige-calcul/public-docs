@@ -12,13 +12,17 @@ Then follow the next steps:
 
 ![](./images/wscp1.PNG)
 
+
 ## Mantis Config
+
 
 ![](./images/winscp1.PNG)
 
 ![](./images/winscp2.PNG)
 
+
 ## Ige calcul1 Config
+
 
 ![](./images/wscp2.PNG)
 ```{note}
@@ -34,9 +38,7 @@ Make sure to change the username **chekkim** by your agalan login
 
 ## Load the ssh key 
 
-```{note}
-You can see the default ssh key detected, don't worry this key will be replaced by the new one
-```
+
 ![](./images/wscp21.PNG)
 
 ![](./images/wscp22.PNG)
