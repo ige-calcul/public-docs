@@ -27,6 +27,11 @@ In order to connect to ige-calcul1, you need to set-up a ssh tunnel ige-ssh.u-ga
 ```
 ![](./images/wscp3.PNG)
 
+```{caution}
+Make sure to change the username **chekkim** by your agalan login
+```
+
+
 ## Load the ssh key 
 
 ```{note}
