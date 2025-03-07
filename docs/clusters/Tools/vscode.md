@@ -3,7 +3,12 @@
 
 # Vscode on Gricad
 
-Run vscode directly on cluster frontend or a cluster node
+
+Visual Studio Code (or VSCODE) is a free, cross-platform code editor that integrates many features and allows you to integrate new ones thanks to a large catalog of plugins.
+
+First install Vscode by the following this[link](https://code.visualstudio.com/)
+
+This doc will explain how to Run vscode directly on cluster frontend or a cluster , this is for Gricad, but can be applied to any other cluster
 
 Install the [Remote SSH extension](https://code.visualstudio.com/docs/remote/ssh). Ensure you have set up your `$HOME/.ssh/config` file and ssh keys so you can access dahu without any password. See [SSH-keys](../Gricad/dahu.md) for details.
 
