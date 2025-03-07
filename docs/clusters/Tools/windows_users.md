@@ -1,3 +1,4 @@
+# Windows users
 
 ## WSL (Windows Subsystem Linux)
 Learn how  to activate the WSL [Windows Subsystem Linux](wsl.md) to be able to use a linux virtual machine and connect to distant servers.
