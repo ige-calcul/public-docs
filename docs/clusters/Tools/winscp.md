@@ -29,7 +29,7 @@ Then follow the next steps:
 
 ![](./images/wscp2.PNG)
 ```{note}
-In order to connect to ige-calcul1, you need to set-up a ssh tunnel ige-ssh.u-ga.fr
+In order to connect to ige-calcul1, you need to set-up a ssh tunnel ige-ssh
 
 ```
 ![](./images/wscp3.PNG)
@@ -40,7 +40,6 @@ Make sure to change the username **chekkim** by your agalan login
 
 
 ## Load the ssh key 
-
 
 ![](./images/wscp21.PNG)
 
@@ -56,6 +55,12 @@ If not: Open a windows powershell  and type the command (do not give a password 
 Load to winscp the private key:  **id_rsa** (and not id_rsa.pub) which is in the .ssh folder
 ```
 
+![](./images/winscp5.PNG)
+
+```{note}
+This will load the ssh key and convert it in a ppk format 
+```
+
 ![](./images/wscp23.PNG)
 
 ```{note}
@@ -66,13 +71,10 @@ Make sure to select **All files**  to be able to see the private ssh key to load
 
 ```{note}
 Make sure to select the private key, on windows it says **FILE** as it is not recongnized
+Once the key is loaded , you can convert it: click on **Save private key** and give it a new name
+Example here: old name : id_rsa  and the new name is : id_rsa_winscp.ppk
 ```
 
-![](./images/winscp5.PNG)
-
-```{note}
-The ssh key will be converted in a ppk format 
-```
 
 ![](./images/winscp6.PNG)
 
