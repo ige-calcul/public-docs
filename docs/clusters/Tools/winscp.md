@@ -1,4 +1,7 @@
-# Download/upload files to the cluster
+
+# Winscp
+
+## Download/upload files to the cluster
 
 ```{note}
 Here we are using mantis-cargo to get data from Gricad cluster, but you can use it for any other clusters like ige-calcul{1,2,3,4}
