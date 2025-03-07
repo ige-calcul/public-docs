@@ -6,7 +6,7 @@
 
 Visual Studio Code (or VSCODE) is a free, cross-platform code editor that integrates many features and allows you to integrate new ones thanks to a large catalog of plugins.
 
-First install Vscode by the following this[link](https://code.visualstudio.com/)
+First install Vscode by the following this [link](https://code.visualstudio.com/)
 
 This doc will explain how to Run vscode directly on cluster frontend or a cluster , this is for Gricad, but can be applied to any other cluster
 
