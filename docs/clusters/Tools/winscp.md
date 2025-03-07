@@ -5,6 +5,9 @@
 
 ```{note}
 Here we are using mantis-cargo to get data from Gricad cluster, but you can use it for any other clusters like ige-calcul{1,2,3,4}
+
+The example of mantis is a direct connection
+The ige-calcu1 connection uses a ssh tunnel through ige-ssh proxy
 ```
 
 You can download the last version from  ![ here ](https://winscp.net/eng/download.php) 
