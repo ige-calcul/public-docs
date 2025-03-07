@@ -1,6 +1,9 @@
 (vscode)=
 
-# Run vscode directly on cluster frontend or a cluster node
+
+# Vscode on Gricad
+
+Run vscode directly on cluster frontend or a cluster node
 
 Install the [Remote SSH extension](https://code.visualstudio.com/docs/remote/ssh). Ensure you have set up your `$HOME/.ssh/config` file and ssh keys so you can access dahu without any password. See [SSH-keys](../Gricad/dahu.md) for details.
 
