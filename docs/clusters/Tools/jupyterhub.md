@@ -1,4 +1,5 @@
-# Run a jupyter notebook on the clusters
+
+# Jupyterhub on Ige Clusters
 
 Make sure you are able to connect to the clusters ige-calcul1/2//3/4 without any passwords
 Please refers to the doc [Connect to the clusters](../Ige/ige-calcul1.md)
