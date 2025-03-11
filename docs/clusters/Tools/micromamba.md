@@ -74,6 +74,10 @@ micromamba create -n pyferret python=3.8  -c conda-forge pyferret ferret_dataset
 micromamba activate pyferret
 ```
 
+```{caution}
+Always create an environment for a single tool/application. This way , if you break an environment for a tool, you will still be able to use the others
+```
+
 ## Clone an environment
 
 Create a yaml file to copy an existing environment:
