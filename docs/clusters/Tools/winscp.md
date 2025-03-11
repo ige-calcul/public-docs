@@ -6,8 +6,11 @@
 ```{note}
 Here we are using mantis-cargo to get data from Gricad cluster, but you can use it for any other clusters like ige-calcul{1,2,3,4}
 
+**Make sure that you are able to connect to the clusters  without a password (cf doc) before going further**
+
 The example of mantis is a direct connection
 The ige-calcu1 connection uses a ssh tunnel through ige-ssh proxy
+
 ```
 
 You can download the last version from  ![ here ](https://winscp.net/eng/download.php) 
@@ -51,11 +54,6 @@ Make sure to change the username **chekkim** by your agalan login
 ```{note}
 At this step make sure you have already generated a key to connect to the cluster.
 
-If not: Open a windows powershell  and type the command (do not give a password for the passphrase, just ENTER twice)
-
- ssh-keygen.exe -t rsa  
-
-Load to winscp the private key:  **id_rsa** (and not id_rsa.pub) which is in the .ssh folder
 ```
 
 ![](./images/winscp5.PNG)
