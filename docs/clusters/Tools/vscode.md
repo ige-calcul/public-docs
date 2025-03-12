@@ -1,7 +1,7 @@
 (vscode)=
 
 
-# Vscode on Gricad
+# Vscode 
 
 
 Visual Studio Code (or VSCODE) is a free, cross-platform code editor that integrates many features and allows you to integrate new ones thanks to a large catalog of plugins.
@@ -10,19 +10,27 @@ First install Vscode by the following this [link](https://code.visualstudio.com/
 
 This doc will explain how to Run vscode directly on cluster frontend or a cluster , this is for Gricad, but can be applied to any other cluster
 
-Install the [Remote SSH extension](https://code.visualstudio.com/docs/remote/ssh). Ensure you have set up your `$HOME/.ssh/config` file and ssh keys so you can access dahu without any password. See [SSH-keys](../Gricad/dahu.md) for details.
+Install the [Remote SSH extension](https://code.visualstudio.com/docs/remote/ssh). Ensure you have set up your `$HOME/.ssh/config` file and ssh keys so you can access the cluster without any password. See [ Gricad SSH-keys ](../Gricad/dahu.md), or [ Ige SSH-keys](../Ige/ige-calcul1.md)  for details.
 
 ## Run on the cluster
 
+Open vscode on your local machine, and open a remote window to dahu/ige-calcul1 (vscode should see your local ssh config file and so recognize the 'dahu' or 'calcul1"  host). You will be connected to the frontend, and you should be to open your files/save them and submit a job from  a vscode terminal.
+
 ```{note}
-This documentation is based on dahu cluster , but you can replace dahu by bigfoot or any other cluster available on Gricad
+
+For Gricad clusters, you should now connect to dahu-workflow1 or dahu-workflow2 instead of dahu, otherwise it will be **killed**
+Make sure to add these hosts in your **$HOME/.ssh/config file**
+
 ```
 
-Open vscode on your local machine, and open a remote window to dahu (vscode should see your local ssh config file and so recognize the 'dahu' host). You will be connected to dahu frontend, and you should be to open your files/save them and submit a job from vscode terminal.
 
-## Run on a cluster node
+## Run on Gricad cluster node
 
-If you want to edit or run code interactively in a job on dahu, you must do some additional configuration. You must be using a linux terminal (e.g. mobaxterm/putty) or you can do this using vscode.
+```{note}
+This example is given to connect a dahu node , but it can be used for bigfoot node , or any other node on Gricad
+```
+
+If you want to edit or run code interactively in **a running job** on dahu, you must do some additional configuration. You must be using a linux terminal (e.g. mobaxterm/putty) or you can do this using vscode.
 
 Of course all **these steps are not necessary**, you can just open a new terminal once you are connect to dahu with vscode and use oarsub to request the ressource ans continue on the terminal.
 
