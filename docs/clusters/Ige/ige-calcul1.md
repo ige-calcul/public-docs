@@ -47,6 +47,11 @@ Now, you should be able to connect without any password:
 ssh calcul1
 ```
 
+```{note}
+Once connected to the cluster , you will need to manage your files and your codes.
+If you are not familair with editors like vim, emacs , nano, you can use [VScode](../../clusters/Tools/vscode.md)
+```
+
 Then you should ask for a storage space and a slurm account.
 
 Available slurm accounts are:
