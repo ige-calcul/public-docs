@@ -12,9 +12,7 @@ The {ref}`following documentation<igecal1>` will guide you through the different
 
 1. Gricad
 
-## Gricad Clusters
-
-## Gricad CPU
+#### 1.a Gricad CPU
   Gricad infrastructure provides a lot of ressources for all the labs of Grenoble University. It includes CPU/GPU ressources.
 
   For now the most used cluster is dahu which is used for CPU ressources.
@@ -27,7 +25,7 @@ The {ref}`following documentation<igecal1>` will guide you through the different
 
   You can also have a look to [a more detailled documentation from Gricad](https://gricad-doc.univ-grenoble-alpes.fr/hpc/).
 
-## Gricad GPU
+#### 1.b Gricad GPU
   As for **GPU ressources and IA computing**, there is [another cluster named bigfoot](https://gricad-doc.univ-grenoble-alpes.fr/hpc/joblaunch/job_gpu/).
 
   We also have @IGE,  {ref}`straighforward documentation<bigfoot>`, to start computing  on GPUs rapidly.
