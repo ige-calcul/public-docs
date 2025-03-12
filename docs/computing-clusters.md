@@ -10,7 +10,6 @@ The {ref}`following documentation<igecal1>` will guide you through the different
 ## External clusters
 
 
-1. Gricad
 
 #### 1.a Gricad CPU
   Gricad infrastructure provides a lot of ressources for all the labs of Grenoble University. It includes CPU/GPU ressources.
@@ -41,7 +40,7 @@ The {ref}`following documentation<igecal1>` will guide you through the different
 
 
 
-## Code deployement
+## Code deployment
 
 Some tools are described in the following pages :
 
