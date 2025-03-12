@@ -81,6 +81,12 @@ Now, to connect, just type
  ``` 
 ssh dahu
 ```
+
+```{note}
+Once connected to the cluster , you will need to manage your files and your codes.
+If you are not familair with editors like vim, emacs , nano, you can use [VScode](../../clusters/Tools/vscode.md)
+```
+
 ## Running jobs on Gricad clusters
 
 Once you are connected to dahu, you will be able to run jobs with the scheduler named OAR 
