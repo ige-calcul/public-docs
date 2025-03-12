@@ -4,15 +4,15 @@
 ## Download/upload files to the cluster
 
 ```{note}
-Here we are using mantis-cargo to get data from Gricad cluster, but you can use it for any other clusters like ige-calcul{1,2,3,4}
+Here we are using mantis-cargo to get/put data from Gricad cluster, and ige-calcul{1,2,3,4}  for Ige servers
+
+For mantis it uses a a direct connection. As for ige-calcuX connection, it uses a ssh tunnel through ige-ssh proxy
 
 **Make sure that you are able to connect to the clusters  without a password before going further**
 
 Create a ssh key for:  [ mantis/dahu ](../../clusters/Gricad/dahu.md)  Or  [ ige-calculX ](../../clusters/Ige/ige-calcul1.md)
 
 ```
-
-The example of mantis is a direct connection. As for ige-calcu1 connection, it uses a ssh tunnel through ige-ssh proxy
 
 You can download the last version from [ here ](https://winscp.net/eng/download.php) 
 
