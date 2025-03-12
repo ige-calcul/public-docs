@@ -71,6 +71,12 @@ Make sure to select **All files**  to be able to see the private ssh key to load
 
 ![](./images/wscp24.PNG)
 
+
+If you created the ssh keys using WSL, make sure to give the path as follow (or copy the ssh keys elsewhere):
+
+![](./images/sshkey_wsl.PNG)
+
+
 ```{note}
 Make sure to select the private key, on windows it says **FILE** as it is not recongnized
 Once the key is loaded , you can convert it: click on **Save private key** and give it a new name
