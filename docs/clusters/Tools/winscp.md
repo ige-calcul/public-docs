@@ -8,7 +8,9 @@ Here we are using mantis-cargo to get data from Gricad cluster, but you can use 
 
 **Make sure that you are able to connect to the clusters  without a password before going further**
 
-Create a ssh key  [ for mantis/dahu ](../../clusters/Gricad/dahu.md)  and for [ ige-calculX ] (../../clusters/Ige/ige-calcul1.md)
+Create a ssh key for:  [ mantis/dahu ](../../clusters/Gricad/dahu.md)
+
+                       [ ige-calculX ](../../clusters/Ige/ige-calcul1.md)
 
 ```
 
