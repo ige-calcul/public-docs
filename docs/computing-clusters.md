@@ -12,22 +12,25 @@ The {ref}`following documentation<igecal1>` will guide you through the different
 
 1. Gricad
 
+## Gricad Clusters
+
+## Gricad CPU
   Gricad infrastructure provides a lot of ressources for all the labs of Grenoble University. It includes CPU/GPU ressources.
 
   For now the most used cluster is dahu which is used for CPU ressources.
 
   Gricad is open for any student/researcher/engineer. If you have a contract with Grenoble University, you have already an internal account defined by Agalan Credentials. If you are outside the campus and even outside France, you will get an external account as long as you have an institutional email.
 
-  For both cases you will need to log in to a special interface and create an account anyway to join a project (more details follow).
+  For both cases you will need to log in to a special interface [Perseus](https://perseus.univ-grenoble-alpes.fr) and create an account anyway to join a project.
 
   @IGE, we are a providing a {ref}`straighforward documentation<dahu>`, to start computing rapidly.
 
   You can also have a look to [a more detailled documentation from Gricad](https://gricad-doc.univ-grenoble-alpes.fr/hpc/).
 
-  As for GPU ressources and IA computing, there is [another cluster named bigfoot](https://gricad-doc.univ-grenoble-alpes.fr/hpc/joblaunch/job_gpu/).
+## Gricad GPU
+  As for **GPU ressources and IA computing**, there is [another cluster named bigfoot](https://gricad-doc.univ-grenoble-alpes.fr/hpc/joblaunch/job_gpu/).
 
   We also have @IGE,  {ref}`straighforward documentation<bigfoot>`, to start computing  on GPUs rapidly.
-
 
 
 
@@ -36,7 +39,7 @@ The {ref}`following documentation<igecal1>` will guide you through the different
    
   All the related information regarding the TGCC cluster can be found  [Here](./clusters/TGCC/TGCC.md)
    
-5. Jean-zay
+4. Jean-zay
 
 
 
