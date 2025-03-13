@@ -1,3 +1,6 @@
+(jupyter-notebook)=
+
+
 # Create  jupyter environment and run using python 3.10
 
 ```
