@@ -7,13 +7,13 @@ chapters:
 - file: docs/computing-clusters
   sections:
   - file: docs/clusters/general-tips
+  - file: docs/clusters/Tools/vscode
   - file: docs/clusters/Tools/micromamba
   - file: docs/clusters/Tools/windows_users
   - file: docs/clusters/Tools/winscp
   - file: docs/clusters/Ige/ige-calcul1
   - file: docs/clusters/Tools/jupyterhub
-  - file: docs/clusters/Gricad/dahu
-  - file: docs/clusters/Tools/vscode
+  - file: docs/clusters/Gricad/dahu  
   - file: docs/clusters/TGCC/TGCC
  
 - file: docs/data-warehouses
