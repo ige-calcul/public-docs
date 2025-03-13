@@ -99,8 +99,10 @@ Hence you need to use a job scheduler (OAR) to launch calculations on the nodes.
 
 For example, let's say that you need to run R calculations on the server :
 
-  - To install R packages, either use [nix](https://gricad-doc.univ-grenoble-alpes.fr/hpc/softenv/nix/#r-packages) or [guix](https://gricad-doc.univ-grenoble-alpes.fr/hpc/softenv/guix/) environement or use [micromamba](../../clusters/Tools/micromamba.md)
+  - To install R packages, either use [nix](https://gricad-doc.univ-grenoble-alpes.fr/hpc/softenv/nix/#r-packages) or [guix](https://gricad-doc.univ-grenoble-alpes.fr/hpc/softenv/guix/) environement.
+    The easiest way is to use [micromamba](../../clusters/Tools/micromamba.md)
 
+### Job submission
 
   - Here's an example of a job header:
 
@@ -200,6 +202,7 @@ If  you want the whole memory, you should asked for all available cores (n_cores
 chmod 750 job_exemple.oar  
 oarsub -S ./job_exemple.oar
 ```
+### Interactive submission
 
 **Use the interactive mode**
 
@@ -251,7 +254,7 @@ You must work on /bettik/login_gricad,  /bettik/PROJECTS/PROJECT_NAME/login_gric
 
 Bettik is a parallel filesystem so it is very fast when it comes to write/read data by the same program with different tasks
 
-This space is accessible to all nodes. 
+This storage is accessible to all nodes. 
 
 More info on [Gricad Website](https://gricad-doc.univ-grenoble-alpes.fr/hpc/data_management/bettik/)
   
