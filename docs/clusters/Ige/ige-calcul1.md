@@ -68,7 +68,7 @@ ice3
 chianti
 ```
 
-Please send an email to `mondher.chekki@uXXXX-gYYYY-aZZZZ.fr asking for storage under /workdir and a slurm account by providing the name of your team and the space you need (1G,10G,100G,1TB).
+Please send an email to `mondher.chekki@uXXXX-gYYYY-aZZZZ.fr asking for storage under /workdir and /worldir2 and a slurm account by providing the name of your team and the space you need (1G,10G,100G,1TB).
 
 
 ## Available softwares
@@ -92,7 +92,7 @@ The [official documentation for slurm](https://slurm.schedmd.com/quickstart.html
 
 
 
-## Commands
+## Slurm useful Commands
 
 | Command  | Syntax        | Description   |
 | ---------|:-------------:|:-------------:|
@@ -117,6 +117,9 @@ There are 2 working directories available on the clusters
 
 ##  Running jupyter notebooks on the clusters
 
+ If you just need to connect to the cluster and run jupyter notebook or a code, you can do it by using the jupyterhub
+ By connecting , it will automatically submit a job with the ressources you asked and open a jupyterlab for you
+ You can also access the vscode via the browser automatically. This vscode is running at the same time of your job and using the same ressources.
  Please refer to this doc [How to run jupyter notebooks on Ige clusters](../../clusters/Tools/jupyterhub.md)
 
 ## Running python code on the clusters 
