@@ -286,13 +286,13 @@ srun --mpi=pmix -n 4 ./hello_mpi
 ==> This will keep the ressources even when the program is done
 
 
-  - Run Qgis with 8 threads (graphic interface)
+  - Run Qgis with 8 threads (graphic interface) and 4000 MB of RAM 
 
 ```bash
 srun --mpi=pmix -n 1 -c 8 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 qgis
 or
 srun --mpi=pmix -n 1 -c 8 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 --pty bash -i
-and then run 
+and then  
 qgis
 ```
 
