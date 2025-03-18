@@ -279,7 +279,8 @@ or
 
 ```bash
 srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 --pty bash -i
-srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi
+and then
+srun --mpi=pmix -n 4 ./hello_mpi
 ```
 
 ==> This will keep the ressources even when the program is done
@@ -289,6 +290,10 @@ srun --mpi=pmix -n 4 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 hello_mpi
 
 ```bash
 srun --mpi=pmix -n 1 -c 8 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 qgis
+or
+srun --mpi=pmix -n 1 -c 8 -N 1 --account=cryodyn --mem=4000 --time=01:00:00 --pty bash -i
+and then run 
+qgis
 ```
 
   - Run Jupiter notebook with 4 threads
