@@ -3,17 +3,17 @@
 # IGE clusters
 
 
-IGE computing servers are  ige-calcul[1-4]: ige-calcul1, ige-calcul2, ige-calcul3, ige-calcul4.
+IGE computing servers are  ige-calcul[1-2]: ige-calcul1, ige-calcul2
 
-You can replace calcul1 by calcul2, calcul3 or calcul4 in the following documentation depending on the cluster your choose
+You can replace calcul1 by calcul2 in the following documentation depending on the cluster your choose
 
 ### Features of the clusters
 
-|          | ige-calcul1     | ige-calcul2   | ige-calcul3    | ige-calcul4        |
-| ---------|:---------------:|:-------------:|:--------------:|:------------------:|
-| CPU      | 2 CPU 24c (48c) |2 CPU 18c (36c)|2 CPU 28c (56c) | 2 CPU 16c (32c)    |
-| RAM      |  256 Go         |  512 Go       |  768 Go        | 256 Go             |
-| GPU      | NVIDIA A40 (46G)     |   NO          | NVIDIA RTX 6000 (?)| 2 NVIDIA RTX A4500 (2x20G) | 
+|          | ige-calcul1     | ige-calcul2   | 
+| ---------|:---------------:|:-------------:|
+| CPU      | 2 CPU 24c (48c) |2 CPU 18c (36c)|
+| RAM      |  256 Go         |  512 Go       |
+| GPU      | NVIDIA A40 (46G)     |   NO      
 
 
 ## Connection to the server
@@ -111,7 +111,7 @@ The [official documentation for slurm](https://slurm.schedmd.com/quickstart.html
 
 There are 2 working directories available on the clusters
 ```bash
-/workdir   (only on ige-calcul1 and ige-calcul4)
+/workdir   (only on ige-calcul1)
 /workdir2  (available on all clusters: SUMMER STORAGE)
 ```
 
