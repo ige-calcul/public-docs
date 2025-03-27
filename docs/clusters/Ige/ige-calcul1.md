@@ -3,9 +3,9 @@
 # IGE clusters
 
 
-IGE computing servers are  ige-calcul[1-2]: ige-calcul1, ige-calcul2
+IGE computing servers are  ige-calcul[1-4]:{ ige-calcul1, ige-calcul2, ige-calcul3, ige-calcul4}
 
-You can replace calcul1 by calcul2 in the following documentation depending on the cluster your choose
+You can replace calcul1 by calcul2,3,4 in the following documentation depending on the cluster your choose
 
 ### Features of the clusters
 
