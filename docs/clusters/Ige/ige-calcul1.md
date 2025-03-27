@@ -9,11 +9,15 @@ You can replace calcul1 by calcul2 in the following documentation depending on t
 
 ### Features of the clusters
 
-|          | ige-calcul1     | ige-calcul2   | 
-| ---------|:---------------:|:-------------:|
-| CPU      | 2 CPU 24c (48c) |2 CPU 18c (36c)|
-| RAM      |  256 Go         |  512 Go       |
-| GPU      | NVIDIA A40 (46G)     |   NO      
+
+
+
+|          | ige-calcul1     | ige-calcul2   |  ige-calcul3    | ige-calcul4       |
+| ---------|:---------------:|:-------------:|:--------------:|:------------------:|
+| CPU      | 2 CPU 24c (48c) |2 CPU 18c (36c)|2 CPU 28c (56c) | 2 CPU 16c (32c)    |
+| Total CPU avec HT  | 96          |72             |112             | 64                 |
+| RAM      |  256 Go         |  512 Go       |  768 Go        | 256 Go             |
+| GPU      | NVIDIA A40 (46G)     |   NO     | NVIDIA RTX 6000 (24G)| 2 NVIDIA RTX A4500 (2x20G) |
 
 
 ## Connection to the server
