@@ -1,7 +1,7 @@
 (bigfoot)=
 
 
-# Bigfoot
+# Gricad cluster: Bigfoot
 
 
 This is the name of the GPU server of Gricad
