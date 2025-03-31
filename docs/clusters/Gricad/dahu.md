@@ -1,11 +1,6 @@
 (dahu)=
 
-# Gricad clusters
-
-1. [First connection](#First connection)
-2. [Running jobs on Gricad clusters](#Running jobs on Gricad clusters)
-3. [Storage on Gricad clusters](#Storage on Gricad clusters)
-4. [Elmer usage on Gricad clusters](#Elmer usage on Gricad clusters)
+# Gricad cluster: Dahu
 
 ## First connection
 
