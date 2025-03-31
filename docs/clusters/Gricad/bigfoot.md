@@ -36,7 +36,7 @@ chekkim@bigfoot:~$ recap.py
  # of GPUS: 10 A100, 28 V100, 1 GH200
 ```
 
-In order to connect , you should refer to the dahu page to create the ssh keys , the connection is the same, here are the differences:
+In order to connect , you should refer to the [dahu page](https://ige-calcul.github.io/public-docs/docs/clusters/Gricad/dahu.html#first-connection)  to create the ssh keys , the connection is the same, here are the differences:
 
  In the file **$HOME/.ssh/config** : 
   
