@@ -13,7 +13,8 @@ chapters:
   - file: docs/clusters/Tools/winscp
   - file: docs/clusters/Ige/ige-calcul1
   - file: docs/clusters/Tools/jupyterhub
-  - file: docs/clusters/Gricad/dahu  
+  - file: docs/clusters/Gricad/dahu
+  - file: docs/clusters/Gricad/bigfoot
   - file: docs/clusters/TGCC/TGCC
  
 - file: docs/data-warehouses
