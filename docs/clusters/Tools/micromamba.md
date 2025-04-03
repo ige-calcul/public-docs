@@ -73,6 +73,9 @@ install.packages('IRkernel')
 # if R version is  R 4.4.2
 IRkernel::installspec(name = 'ir442', displayname = 'R 4.4.2')
 ```
+Once you start a jupyterlab server, an icon will shows up on the right with  **R 4.4.2** 
+The difference between a simple R file and using this kernel, is that with the kernel, you will be able to run your code **cell by cell** in a notebook style
+
 
 **Example 2:** Create a ferret environment 
 
