@@ -241,7 +241,7 @@ To use gpus in a job , add the following in your submission file
 or for 2 gpus 
 
 ```bash
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:2
 ```
 
 
