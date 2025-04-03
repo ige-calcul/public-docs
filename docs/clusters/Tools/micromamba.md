@@ -64,6 +64,16 @@ micromamba install r r-base r-essentials -c conda-forge
 micromamba install r-ncdf4 -c conda-forge
 ```
 
+In order to install the corresponding kernel and use it from a jupyter notebook
+
+Get R version and run R command
+
+```bash
+install.packages('IRkernel')
+# if R version is  R 4.4.2
+IRkernel::installspec(name = 'ir442', displayname = 'R 4.4.2')
+```
+
 **Example 2:** Create a ferret environment 
 
 ```bash
