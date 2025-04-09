@@ -353,9 +353,11 @@ If your job is pending, you need to wait for the ressources or adapt you submiss
 You can get the available memory/cpus on the cluster with the squeue command
 
 ```
-```
+
+```bash
 [ige-calcul1  /home/chekkim ]$    sinfo -NO "CPUs:8,CPUsState:16,Memory:9,AllocMem:10,Gres:14,GresUsed:24,NodeList:50"
 ```
+
 |CPUS        |  CPUS(A/I/O/T)    |  MEMORY   |   ALLOCMEM | GRES     |   GRES_USED   |   NODELIST|
 |------------|:-----------------:|:---------:|:----------:|:--------:|:-------------:|:-------------:|
 |96          |  48/48/0/96       |  240000   |   225920   |  gpu:1   |       gpu:1   |   ige-calcul1 |
@@ -370,7 +372,7 @@ Available Memory= MEMORY  - ALLOCMEM
 If your job is slow, you should check the CPU_LOAD and make sure it is equivalent to the number of Allocated CPUS.
 For this example , the CPU_LOAD is 101 and the allocated is 0, on ige-calcul3, which means that there are some programs running on the background and they are not using SLURM and this is not **NORMAL** 
 
-```
+```bash
 chekkim@ige-calcul3:~$ sinfo  -o "%20N   %10O %10c  %15C"
 ```
 
@@ -378,6 +380,31 @@ chekkim@ige-calcul3:~$ sinfo  -o "%20N   %10O %10c  %15C"
 |------------|:-------------:|:------------:|:---------------------:|
 |ige-calcul3 |       101.33  |      112     |          0 112 112    | 
 
+
+## Estimating Job Start Time
+
+When a job is queued with (Resources flag), you can see its estimated start time by passing the --start flag to squeue.
+For example:
+
+
+```bash
+[ige-calcul1  /home/chekkim ]$    squeue  -u chekkim
+            978310    calcul Mytest  chekkim PD       0:00      1 (Resources)
+```
+
+```bash
+[ige-calcul1  /home/chekkim ]$    squeue --start --job 978310
+             JOBID PARTITION     NAME     USER ST          START_TIME  NODES SCHEDNODES           NODELIST(REASON)
+            978310    calcul Mytest chekkim PD 2025-04-09T18:39:04      1 ige-calcul1          (Resources)
+```
+
+You can also estimate how long it would take before a job starts without submitting by passing --test-only to sbatch. 
+For example:
+
+```bash
+[ige-calcul1  /home/chekkim ]$    sbatch --test-only test.slurm
+sbatch: Job 978327 to start at 2025-04-19T04:30:09 using 2 processors on nodes ige-calcul1 in partition calcul
+```
 
 ## Code efficiency on the cluster
 
