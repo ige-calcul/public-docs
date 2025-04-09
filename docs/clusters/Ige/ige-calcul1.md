@@ -353,30 +353,30 @@ If your job is pending, you need to wait for the ressources or adapt you submiss
 You can get the available memory/cpus on the cluster with the squeue command
 
 ```
-
 ```
-chekkim@ige-calcul3:~$ sinfo  -o "%20N  %15c  %15C  %10m  %20e   %30G " |  awk -F "/"  '{print $1, $2, $4}'
+[ige-calcul1  /home/chekkim ]$    sinfo -NO "CPUs:8,CPUsState:16,Memory:9,AllocMem:10,Gres:14,GresUsed:24,NodeList:50"
 ```
+|CPUS        |  CPUS(A/I/O/T)    |  MEMORY   |   ALLOCMEM | GRES     |   GRES_USED   |   NODELIST|
+|------------|:-----------------:|:---------:|:----------:|:--------:|:-------------:|:-------------:|
+|96          |  48/48/0/96       |  240000   |   225920   |  gpu:1   |       gpu:1   |   ige-calcul1 |
 
-| NODELIST   |           CPUS    |      **CPUS(A I T)**  |  MEMORY   |   FREE_MEM     |          GRES|
-|------------|:-----------------:|:---------------------:|:---------:|:--------------:|:-------------:|
-|ige-calcul3 |           112     |        4 108 112      |  740000   |   525031       |         (null)|
 
 **CPUS(A I T):**:
 
 A:  Allocated (Used)   I:   Idle (free)   T:   Total (Total)
 
+Available Memory= MEMORY  - ALLOCMEM
 
 If your job is slow, you should check the CPU_LOAD and make sure it is equivalent to the number of Allocated CPUS.
-For this example , the CPU_LOAD is 101 and the allocated is 0, which means that there are some programs running on the background and they are not using SLURM and this is not **NORMAL** 
+For this example , the CPU_LOAD is 101 and the allocated is 0, on ige-calcul3, which means that there are some programs running on the background and they are not using SLURM and this is not **NORMAL** 
 
 ```
-chekkim@ige-calcul3:~$ sinfo  -o "%20N   %10O| %10c  %15C  %10m  %20e   %30G " |  awk -F "/"  '{print $1, $2, $4}'
+chekkim@ige-calcul3:~$ sinfo  -o "%20N   %10O %10c  %15C"
 ```
 
-| NODELIST   |     CPU_LOAD  |      CPUS    |      **CPUS(A I T)**  |  MEMORY   |   FREE_MEM     |          GRES|
-|------------|:-------------:|:------------:|:---------------------:|:---------:|:--------------:|:-------------:|
-|ige-calcul3 |       101.33  |      112     |          0 112 112    |  740000   |     539958     |         (null)|
+| NODELIST   |     CPU_LOAD  |      CPUS    |      **CPUS(A I T)**  | 
+|------------|:-------------:|:------------:|:---------------------:|
+|ige-calcul3 |       101.33  |      112     |          0 112 112    | 
 
 
 ## Code efficiency on the cluster
