@@ -370,13 +370,13 @@ A:  Allocated (Used)   I:   Idle (free)   T:   Total (Total)
 Available Memory= MEMORY  - ALLOCMEM
 
 If your job is slow, you should check the CPU_LOAD and make sure it is equivalent to the number of Allocated CPUS.
-For this example , the CPU_LOAD is 101 and the allocated is 0, on ige-calcul3, which means that there are some programs running on the background and they are not using SLURM and this is not **NORMAL** 
+For this example , the CPU_LOAD is 101 and the allocated is 0, on ige-calcul3, which means that there are some programs running on the background and they are not using SLURM and this is **not normal**  and should be reported.
 
 ```bash
 chekkim@ige-calcul3:~$ sinfo  -o "%20N   %10O %10c  %15C"
 ```
 
-| NODELIST   |     CPU_LOAD  |      CPUS    |      **CPUS(A I T)**  | 
+| NODELIST   |     CPU_LOAD  |      CPUS    |      **CPUS(A/I/O/T)**  | 
 |------------|:-------------:|:------------:|:---------------------:|
 |ige-calcul3 |       101.33  |      112     |          0 112 112    | 
 
