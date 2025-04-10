@@ -362,6 +362,24 @@ srun --mpi=pmix -n 1 -c 4 -N 1  matlab -nodisplay -nosplash -nodesktop  -batch "
 srun --mpi=pmix -n 1 -c 4 -N 1  matlab  -nodisplay -nosplash -nodesktop < test.m
 ```
 
+## Need more ressources
+
+```{caution}
+There is a limitation of 48 hours for the walltime, please let us know if you need more and you will be added to the qos : longjobs
+
+usage:
+
+#SBATCH --qos=longjobs
+
+Similarly, there is a limitation of 80000 MB of RAM, please let us know if you need more memory, and you will be added to the qos: largemem
+
+usage:
+
+#SBATCH --qos=largemem
+
+```
+
+
 ## How to check the  available ressources
 
 ```{caution}
