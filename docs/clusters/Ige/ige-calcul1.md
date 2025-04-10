@@ -118,6 +118,23 @@ There are 2 working directories available on the clusters
 /workdir   (only on ige-calcul1)
 /workdir2  (available on all clusters: SUMMER STORAGE)
 ```
+There is also a summer storage for each team and you can have access to.
+Please refer to your team supervisor beore using it
+
+```bash
+/mnt/your_agalan_login/equipes/
+```
+
+In this case you need to force the authentification using a password as follow:
+
+```bash
+chekkim@DESKTOP-JS95HH3:~$ ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no calcul1
+
+[ige-calcul1  /home/chekkim ]$    ls /mnt/chekkim/equipes/
+ C2H       Communication   DRONE    GLACIOCLIM   HYDRIMZ   MEOM     PLATEAUX  '~snapshot'   ST
+ CHIANTI   CRYODYN         ECRINS   HMCIS        ICE3      PHYREV   SI         SOMME
+
+```
 
 ##  Running jupyter notebooks on the clusters
 
