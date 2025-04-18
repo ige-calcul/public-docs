@@ -36,6 +36,9 @@ chekkim@bigfoot:~$ recap.py
  # of GPUS: 10 A100, 28 V100, 1 GH200
 ```
 
+
+
+
 In order to connect , you should refer to the [dahu page](https://ige-calcul.github.io/public-docs/docs/clusters/Gricad/dahu.html#first-connection)  to create the ssh keys , the connection is the same, here are the differences:
 
  In the file **$HOME/.ssh/config** : 
@@ -103,11 +106,34 @@ or  for one of them
 
 ```
 
+**Use the interactive mode**
+
+If you are developping a code, it is better to have acces to a node for debugging issues. In the passive mode, if you make a small mistake, then you have to submit your job again and wait in the queue.
+Using the interactive mode allows to correct your mistake and run your code until you make sure that everything is working fine.
+
+To do that use **oarsub** with **-I** command:
+
+```
+oarsub -I -l nodes=1/gpu=1,walltime=01:30:00 --project sno-elmerice -p gpumodel='A100'
+or
+oarsub -I -l nodes=1/gpu=1,walltime=01:30:00 --project sno-elmerice -p gpumodel='V100'
+or
+oarsub -I -l nodes=1/gpu=1,walltime=01:30:00 --project sno-elmerice -p gpumodel="'A100' or gpumodel='V100'"
+```
+
+
 ```{note}
 There is only one node GH200 and it is experimental fro now; to use it add this, instead of gpumodel
 #OAR -t gh
 ```
+You can also see a live usage of the gpu nodes using the "chandler" command
 
+![Live usage](../../../images/chandler_bigfoot.PNG)
+
+
+```{caution}
+For example, bigfoot1 has 4 gpus. If you bare using 1 gpu, you will get the 1/4  of the node ressources , i.e 1/4 of the number of cpus and  1/4 of the total  RAM 
+```
 
 ## Make a reservation 
 
