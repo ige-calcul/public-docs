@@ -153,6 +153,9 @@ n_cores_asked x ( total_mem/n_cores)
 
 If  you want the whole memory, you should asked for all available cores (n_cores) in one node
 
+### Node information and usage
+
+You can easily get the description of the nodes using "recap.py" script
 ```
 [f-dahu /home/chekkim ]$ recap.py  
 ========================================================================================  
@@ -190,6 +193,10 @@ If  you want the whole memory, you should asked for all available cores (n_cores
 | dahu-visu| Silver 4216| 2 | 32 | 192 |system_hdd | none | NO |  
 ========================================================================================
 ```
+
+You can also see a live usage of the nodes using the "chandler" command
+
+![Live usage](../../../images/chandler_dahu.PNG)
 
 
   - To run the job do 
