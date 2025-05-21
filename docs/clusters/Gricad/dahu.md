@@ -328,10 +328,10 @@ Copy this file to your $HOME/.irods directory on dahu, keep the same name  and p
 }
 ```
 
-and then connect using iinit
+and then connect using iinit ( this will create a token for 8640 hours, i.e 360 days (MAX) )
 
 ```
-f-dahu  /home/chekkim ]$  iinit
+f-dahu  /home/chekkim ]$  iinit --ttl  8640
 Enter your current PAM password:
 [f-dahu  /home/chekkim ]$  ils
 /mantis/home/chekkim:
