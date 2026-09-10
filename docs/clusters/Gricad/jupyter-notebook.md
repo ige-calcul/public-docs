@@ -1,7 +1,8 @@
-(jupyter-notebook)=
+(gricad-jupyter-notebook)=
 
+# How to run a jupyter notebook on GRICAD clusters
 
-# Create  jupyter environment and run using python 3.10
+## Create  jupyter environment and run using python 3.10
 
 ```
  micromamba create --name jupyter python=3.10 -c conda-forge
@@ -27,7 +28,7 @@ echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.
 echo "c.NotebookApp.ip = '0.0.0.0'" >> ~/.jupyter/jupyter_notebook_config.py
 ```
 
-# Connecting to the compute node from dahu
+## Connecting to the compute node from dahu
 
  Once on dahu, reserve resources in interactive mode
 

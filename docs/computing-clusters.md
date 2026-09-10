@@ -9,6 +9,13 @@ Depending on your needs, several options are available to access CPU and/or GPU 
   - {ref}`GRICAD mesocenter<gricad>` : several clusters dedicated to HPC and/or AI with multiple CPUs and GPUs accessible to all UGA with an agalan account (Tier 2)
   - {ref}`national supercomputers<genci>` : 3 supercomputers centers accessible through a request at GENCI (Tier 1)
 
+## Notebook servers available
+
+Some jupyterhub servers are deployed on clusters, here is a list of what is available :
+  - {ref}`Launch a personnal jupyter notebook on IGE clusters<ige-jupyterhub>`
+  - IGE's Jupyterhub
+  - {ref}`Launch a personnal jupyter notebook on GRICAD clusters<ige-jupyterhub>`
+  - IDRIS's jupyterhub
 
 ## Code deployment
 
