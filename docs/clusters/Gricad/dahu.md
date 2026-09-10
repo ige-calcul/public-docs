@@ -248,7 +248,7 @@ Here is an example of Memory usage for different nodes
 
 ##  Running jupyter notebooks on dahu/bigfoot
 
- Please refer to this doc {ref}`How to run jupyter notebooks on dahu<ige-jupyterhub>`
+ Please refer to this doc {ref}`How to run jupyter notebooks on dahu<gricad-jupyter-notebook>`
 
 ## Storage on Gricad clusters
 

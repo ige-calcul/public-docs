@@ -14,7 +14,7 @@ Depending on your needs, several options are available to access CPU and/or GPU 
 Some jupyterhub servers are deployed on clusters, here is a list of what is available :
   - {ref}`Launch a personnal jupyter notebook on IGE clusters<ige-jupyterhub>`
   - IGE's Jupyterhub
-  - {ref}`Launch a personnal jupyter notebook on GRICAD clusters<ige-jupyterhub>`
+  - {ref}`Launch a personnal jupyter notebook on GRICAD clusters<gricad-jupyter-notebook>`
   - IDRIS's jupyterhub
 
 ## Code deployment
